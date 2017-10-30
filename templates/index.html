@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.6/socket.io.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var socket = io.connect("http://" + document.domain + ":" + location.port + "/mynamespace");
+            socket.on('response', function(msg){
+                if (msg.data.letter == undefined) {
+		  return false;
+		}
+                $("#letter").text('letter suggested : ' + msg.data.letter);
+	        $("#word").text('word suggested : ' + msg.data.word);
+            });
+            
+	    $(".key").click(function(event){
+	      $("#input").append(' ' + $.trim($(this).text()));
+	      socket.emit("request", {data: $.trim($("#input").text())});
+	      return false;
+	    });
+        });
+    </script>
+    <meta charset="UTF-8">
+    <title>multi cursor test</title>
+</head>
+<body>
+
+<h3>input</h3>
+<div id="input" style="height: 50px;" >
+</div>
+
+<div id="letter" style="height: 25px;"> 
+letter suggested : 
+</div>
+<div id="word" style="height: 25px;"> 
+word suggestd : 
+</div>
+
+<div class="keycontainer" style="height: 50px; width: 100%;">
+  <div class="key" id="1" style="height: 100%; width: 5%; float: left; border-style: solid;">
+    qwe
+  </div>
+  <div class="key" id="2" style="height: 100%; width: 5%; float: left; border-style: solid;">
+    rtyu
+  </div>
+  <div class="key" id="3" style="height: 100%; width: 5%; float: left; border-style: solid;">
+    iop
+  </div>
+  <div class="key" id="4" style="height: 100%; width: 5%; float: left;border-style: solid;">
+    asd
+  </div>
+  <div class="key" id="5" style="height: 100%; width: 5%; float: left; border-style: solid;">
+    fgh
+  </div>
+  <div class="key" id="6" style="height: 100%; width: 5%; float: left; border-style: solid;">
+    jkl
+  </div>
+  <div class="key" id="7" style="height: 100%; width: 5%; float: left; border-style: solid;">
+    zxc
+  </div>
+  <div class="key" id="8" style="height: 100%; width: 5%; float: left; border-style: solid;">
+    vbnm
+  </div>
+</div>
+
+</body>
+</html>
