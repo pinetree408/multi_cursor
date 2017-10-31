@@ -6,12 +6,12 @@
     <script type="text/javascript">
       var socket;
       var keyboard = ['qwe', 'rtyu', 'iop', 'asd', 'fgh', 'jkl', 'zxc', 'vbnm'];
-      var cursor = 0;
+      var cursor = 1;
       var windowIndex = [0,2];
 
       function setKeyboard() {
         $(".keycontainer").empty();
-	cursor = 0;
+	cursor = 1;
 	windowIndex = [0,2];
 	keyboard.forEach(function(key, index){
           var keyDiv = $('<div>').append(key);
@@ -21,11 +21,6 @@
 	    "float": "left",
 	    "border-style": "solid"
 	  });
-	  if (index == 0) {
-	    keyDiv.css({
-	      "background-color": "red"
-	    });
-	  } 
 	  keyDiv.click(function(event){
 	    $("#input").append(' ' + $.trim($(this).text()));
 	    socket.emit("request", {data: $.trim($("#input").text())});
@@ -40,20 +35,6 @@
 	    $('.keycontainer').children().eq(index).hide();
 	  }
         });   
-      }
-
-      function setKeyFocus() {
-        keyboard.forEach(function(key, index) {
-          if (index == cursor) {
-	    $(".keycontainer").children().eq(index).css({
-	      "background-color": "red"
-	    })
-          } else {
-	    $(".keycontainer").children().eq(index).css({
-	      "background-color": "white"
-	    })
-          }
-        });
       }
 
       $(document).ready(function(){
@@ -73,7 +54,7 @@
       $(document).keydown(function(event) {
         switch(event.keyCode) {
 	  case 37:
-            if (cursor == 0) {
+            if (cursor == 1) {
 	      break;
 	    }
             cursor--;
@@ -87,10 +68,9 @@
 		}
 	      });
 	    }
-	    setKeyFocus();
             break;
 	  case 39:
-	    if (cursor == 7) {
+	    if (cursor == 6) {
 	      break;
 	    }
 	    cursor++;
@@ -104,10 +84,17 @@
 		}
 	      });
 	    }
-	    setKeyFocus();
 	    break;
-	  case 13:
-	    $("#input").append(' ' + $.trim($(".keycontainer").children().eq(cursor).text()));
+	  case 90:
+	    $("#input").append(' ' + $.trim($(".keycontainer").children().eq(windowIndex[0]).text()));
+	    socket.emit("request", {data: $.trim($("#input").text())});
+	    break;
+	  case 88:
+	    $("#input").append(' ' + $.trim($(".keycontainer").children().eq(windowIndex[0] + 1).text()));
+	    socket.emit("request", {data: $.trim($("#input").text())});
+	    break;
+	  case 67:
+	    $("#input").append(' ' + $.trim($(".keycontainer").children().eq(windowIndex[1]).text()));
 	    socket.emit("request", {data: $.trim($("#input").text())});
 	    break;
 	}
