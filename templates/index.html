@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head lang="en">
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.6/socket.io.js"></script>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
     <script type="text/javascript">
       var socket;
       var keyboard = ['qwe', 'rtyu', 'iop', 'asd', 'fgh', 'jkl', 'zxc', 'vbnm'];
@@ -45,10 +46,43 @@
           }
 	  keyboard = msg.data.letter.split(",");
 	  setKeyboard(socket, keyboard);
-	  $("#word").text('word suggested : ' + msg.data.word);
+	  $("#word").text(msg.data.word);
         });
             
 	setKeyboard();
+	$('.keycontainer').on('swiperight', function(event){
+            if (cursor == 1) {
+	      return;
+	    }
+            cursor--;
+	    if (cursor == windowIndex[0] && windowIndex[0] != 0) {
+	      windowIndex = [windowIndex[0] - 1, windowIndex[1] - 1];
+	      $('.keycontainer').children().each(function(index) {
+	        if (windowIndex[0] <= index && index <= windowIndex[1]) {
+		  $('.keycontainer').children().eq(index).show();
+		} else {
+		  $('.keycontainer').children().eq(index).hide();
+		}
+	      });
+	    }
+        });
+	$('.keycontainer').on('swipeleft', function(event){
+	    if (cursor == 6) {
+	      return;
+	    }
+	    cursor++;
+	    if (cursor == windowIndex[1] && windowIndex[1] != keyboard.length - 1) {
+	      windowIndex = [windowIndex[0] + 1, windowIndex[1] + 1];
+	      $('.keycontainer').children().each(function(index) {
+	        if (windowIndex[0] <= index && index <= windowIndex[1]) {
+		  $('.keycontainer').children().eq(index).show();
+		} else {
+		  $('.keycontainer').children().eq(index).hide();
+		}
+	      });
+	    }
+	
+	});
       });
       
       $(document).keydown(function(event) {
@@ -104,14 +138,8 @@
     <title>multi cursor test</title>
   </head>
   <body>
-
-    <div id="input" style="height: 50px;" >
-    </div>
-    <div id="word" style="height: 25px;"> 
-      word suggestd : 
-    </div>
-
-    <div class="keycontainer" style="height: 50px; width: 100%;">
-    </div>
+    <div id="word" style="height: 30px; margin: auto;"></div>
+    <div class="keycontainer" style="height: 50px; margin:auto; width: 100%; user-select: none;"></div>
+    <div id="input" style="height: 50px;" ></div>
   </body>
 </html>
