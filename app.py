@@ -50,4 +50,7 @@ def request(message):
     emit("response", {'data': data, 'username': session['username']}, broadcast=True)
 
 if __name__ == '__main__':
+    app.jinja_env.auto_reload = True
+    app.config['TEMPLATES_AUTO_RELOAD'] = True
+    app.config['DEBUG'] = True
     socketio.run(app, host='0.0.0.0')

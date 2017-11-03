@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head lang="en">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.6/socket.io.js"></script>
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
@@ -18,7 +19,7 @@
           var keyDiv = $('<div>').append(key);
 	  keyDiv.css({
 	    "height": "100%",
-	    "width": "5%",
+	    "width": "30%",
 	    "float": "left",
 	    "border-style": "solid"
 	  });
@@ -83,55 +84,6 @@
 	    }
 	
 	});
-      });
-      
-      $(document).keydown(function(event) {
-        switch(event.keyCode) {
-	  case 37:
-            if (cursor == 1) {
-	      break;
-	    }
-            cursor--;
-	    if (cursor == windowIndex[0] && windowIndex[0] != 0) {
-	      windowIndex = [windowIndex[0] - 1, windowIndex[1] - 1];
-	      $('.keycontainer').children().each(function(index) {
-	        if (windowIndex[0] <= index && index <= windowIndex[1]) {
-		  $('.keycontainer').children().eq(index).show();
-		} else {
-		  $('.keycontainer').children().eq(index).hide();
-		}
-	      });
-	    }
-            break;
-	  case 39:
-	    if (cursor == 6) {
-	      break;
-	    }
-	    cursor++;
-	    if (cursor == windowIndex[1] && windowIndex[1] != keyboard.length - 1) {
-	      windowIndex = [windowIndex[0] + 1, windowIndex[1] + 1];
-	      $('.keycontainer').children().each(function(index) {
-	        if (windowIndex[0] <= index && index <= windowIndex[1]) {
-		  $('.keycontainer').children().eq(index).show();
-		} else {
-		  $('.keycontainer').children().eq(index).hide();
-		}
-	      });
-	    }
-	    break;
-	  case 90:
-	    $("#input").append(' ' + $.trim($(".keycontainer").children().eq(windowIndex[0]).text()));
-	    socket.emit("request", {data: $.trim($("#input").text())});
-	    break;
-	  case 88:
-	    $("#input").append(' ' + $.trim($(".keycontainer").children().eq(windowIndex[0] + 1).text()));
-	    socket.emit("request", {data: $.trim($("#input").text())});
-	    break;
-	  case 67:
-	    $("#input").append(' ' + $.trim($(".keycontainer").children().eq(windowIndex[1]).text()));
-	    socket.emit("request", {data: $.trim($("#input").text())});
-	    break;
-	}
       });
     </script>
     <meta charset="UTF-8">
