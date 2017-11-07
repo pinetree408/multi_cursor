@@ -29,7 +29,14 @@ def index():
 
 @socketio.on('connect', namespace='/mynamespace')
 def connect():
-    emit("response", {'data': 'Connected', 'username': session['username']})
+    input_data = []
+    letter_result = LanguageModelMulti.getStaticMultiAlphasFromPrefix(input_data)
+    word_result = LanguageModelMulti.getWordsFromMultiAlphaPrefix(input_data)
+    data = {
+            'letter': ', '.join(letter_result),
+            'word': ', '.join(word_result[:5])
+            }
+    emit("response", {'data': data, 'username': session['username']})
 
 @socketio.on('disconnect', namespace='/mynamespace')
 def disconnect():

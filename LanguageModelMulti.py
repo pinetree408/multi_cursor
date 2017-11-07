@@ -82,7 +82,10 @@ def getAlphasFromPrefix(prefix):
 
 
 def getStaticMultiAlphaFreqsFromMultiAlphaPrefix(multiAlphaPrefix):
-    multiAlphas = ['qwe', 'rtyu', 'iop', 'asd', 'fgh', 'jkl', 'zxc', 'vbnm']
+    # qwert based
+    # multiAlphas = ['qwe', 'rtyu', 'iop', 'asd', 'fgh', 'jkl', 'zxc', 'vbnm']
+    # reference papser based
+    multiAlphas = ['aflx', 'gpuy', 'moq', 'dev', 'bit', 'nwz', 'hs', 'cjkr']
     multiAlphaFreqs = []
 
     prefixes = getPrefixesFromMultiAlphaPrefix(multiAlphaPrefix)
@@ -155,11 +158,3 @@ for line in ancFile.readlines():
 
     if len( ancList) == 15000:
         break
-
-#print( getStaticMultiAlphasFromPrefix( ['asd', 'qwe', 'rtyu', 'qwe']))
-#print( getWordsFromMultiAlphaPrefix( ['asd', 'qwe', 'rtyu', 'qwe']))
-
-#multiAlphas = ['qwe', 'rtyu', 'iop', 'asd', 'fgh', 'jkl', 'zxc', 'vbnm']
-
-#print( getStaticMultiAlphasFromPrefix( ['asd', 'iop', 'asd', 'zxc']))
-#print( getWordsFromMultiAlphaPrefix( ['asd', 'iop', 'asd', 'zxc']))
