@@ -46,8 +46,9 @@ def disconnect():
 @socketio.on("request", namespace='/mynamespace')
 def request(message):
     input_data = []
-    for item in message['data'].split(' '):
-        input_data.append(str(item))
+    if message['data'] != '':
+        for item in message['data'].split(' '):
+            input_data.append(str(item))
     letter_result = LanguageModelMulti.getStaticMultiAlphasFromPrefix(input_data)
     word_result = LanguageModelMulti.getWordsFromMultiAlphaPrefix(input_data)
     data = {

@@ -5,6 +5,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.6/socket.io.js"></script>
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+    <script src="{{ url_for('static', filename='mackenzie.js')}}"></script>
     <script type="text/javascript">
       var socket;
       var keyboard;
@@ -19,7 +20,7 @@
           var keyDiv = $('<div>').append(key);
 	  keyDiv.css({
 	    "height": "100%",
-	    "width": "30%",
+	    "width": "32%",
 	    "float": "left",
 	    "border-style": "solid",
 	    "text-align": "center"
@@ -39,15 +40,51 @@
 	  }
         });   
       }
+      
+      function setSuggest(wordList) {
+        $("#word").empty();
+	wordList.forEach(function(key, index){
+	  var wordDiv = $('<div>').append(key);
+	  wordDiv.css({
+	    "height": "100%",
+	    "width": "19%",
+	    "float": "left",
+	    "border-style": "solid",
+	    "text-align": "center"
+	  });
+	  wordDiv.click(function(event){
+	    $("#selected").append(' '+$.trim($(this).text()));
+            if ($("#selected").text() == $("#target").text()) {
+              setTarget();
+            }
+	    $("#input").empty();
+	    socket.emit("request", {data: ''});
+	    return false;
+	  });
+	  $("#word").append(wordDiv);
+	});
+      }
+      
+      function getRandomInt() {
+        var max = mackenzies.length - 1;
+        return Math.floor(Math.random() * max);
+      }
+
+      function setTarget() {
+        $("#target").text(mackenzies[getRandomInt()]);
+      }
 
       $(document).ready(function(){
         socket = io.connect("http://" + document.domain + ":" + location.port + "/mynamespace");
         socket.on('response', function(msg){
 	  keyboard = msg.data.letter.split(",");
 	  setKeyboard();
-	  $("#word").text(msg.data.word);
+	  var wordList = msg.data.word.split(",");
+	  setSuggest(wordList);
         });
-            
+
+        setTarget();
+
 	$('.keycontainer').on('swiperight', function(event){
             if (cursor == 1) {
 	      return;
@@ -87,8 +124,10 @@
     <title>multi cursor test</title>
   </head>
   <body>
-    <div id="word" style="height: 60px; width: 100%; font-size: 1.5em;"></div>
-    <div class="keycontainer" style="height: 50px; margin:auto; width: 100%; user-select: none; font-size: 1.5em;"></div>
-    <div id="input" style="height: 50px;" ></div>
+    <div id="target" style="height: 60px; width:100%; font-size:1.5em"></div>
+    <div id="selected" style="height: 60px; width:100%; font-size:1.5em"></div>
+    <div id="word" style="height: 30px; width: 100%; font-size: 1.5em;"></div>
+    <div class="keycontainer" style="height: 30px; margin:auto; width: 100%; user-select: none; font-size: 1.5em;"></div>
+    <div id="input" style="margin-top: 20px; height: 50px; width: 100%;" ></div>
   </body>
 </html>
