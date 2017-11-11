@@ -13,6 +13,22 @@ socketio = SocketIO(app)
 
 user_no = 1
 
+def get_word_list(input_data):
+    word_set = {}
+    if len(input_data) == 1:
+        word_set = LanguageModelMulti.PREFIXLEN_ONE
+    elif len(input_data) == 2:
+        word_set = LanguageModelMulti.PREFIXLEN_TWO
+    elif len(input_data) == 3:
+        word_set = LanguageModelMulti.PREFIXLEN_THREE
+    elif len(input_data) == 4:
+        word_set = LanguageModelMulti.PREFIXLEN_FOUR
+    elif len(input_data) == 5:
+        word_set = LanguageModelMulti.PREFIXLEN_FIVE
+
+    word_result = word_set[json.dumps(input_data)]
+    return word_result
+
 @app.before_request
 def before_request():
     global user_no
@@ -50,7 +66,8 @@ def request(message):
         for item in message['data'].split(' '):
             input_data.append(str(item))
     letter_result = LanguageModelMulti.getStaticMultiAlphasFromPrefix(input_data)
-    word_result = LanguageModelMulti.getWordsFromMultiAlphaPrefix(input_data)
+    word_result = get_word_list(input_data)
+    #word_result = LanguageModelMulti.getWordsFromMultiAlphaPrefix(input_data)
     data = {
             'letter': ', '.join(letter_result),
             'word': ', '.join(word_result[:5])
@@ -60,5 +77,5 @@ def request(message):
 if __name__ == '__main__':
     app.jinja_env.auto_reload = True
     app.config['TEMPLATES_AUTO_RELOAD'] = True
-    app.config['DEBUG'] = True
+    #app.config['DEBUG'] = True
     socketio.run(app, host='0.0.0.0')

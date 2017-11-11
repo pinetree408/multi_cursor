@@ -1,5 +1,9 @@
+import json
+
 ancFile = open('ANC-all-count.txt')
 ancList = []
+
+multiAlphas = ['aflx', 'gpuy', 'moq', 'dev', 'bit', 'nwz', 'hs', 'cjkr']
 
 
 class Anc:
@@ -85,7 +89,6 @@ def getStaticMultiAlphaFreqsFromMultiAlphaPrefix(multiAlphaPrefix):
     # qwert based
     # multiAlphas = ['qwe', 'rtyu', 'iop', 'asd', 'fgh', 'jkl', 'zxc', 'vbnm']
     # reference papser based
-    multiAlphas = ['aflx', 'gpuy', 'moq', 'dev', 'bit', 'nwz', 'hs', 'cjkr']
     multiAlphaFreqs = []
 
     prefixes = getPrefixesFromMultiAlphaPrefix(multiAlphaPrefix)
@@ -127,8 +130,7 @@ def getPrefixesFromMultiAlphaPrefix(multiAlphaPrefix):
     return prefixes
 
 
-def getWordsFromMultiAlphaPrefix(multiAlphaPrefix):
-
+def getWordsFromMultiAlphaPrefix(multiAlphaPrefix, wordsLength = 5):
     prefixes = getPrefixesFromMultiAlphaPrefix(multiAlphaPrefix)
 
     ancs = []
@@ -138,8 +140,27 @@ def getWordsFromMultiAlphaPrefix(multiAlphaPrefix):
     def cmpAnc(anc1, anc2):
         return cmp(anc1.freq, anc2.freq)
     ancs = sorted(ancs, cmp=cmpAnc, reverse=True)
+    ancs = ancs[0 : wordsLength]
+
     return map(lambda anc: anc.word, ancs)
 
+def getPrefixWordDictFromPrefixLength(prefixLength):
+    prefixWordDict = {}
+    
+    prefixes = [[]]
+    for i in range(prefixLength):
+        tempPrefixes = []
+        for prefix in prefixes:
+            for multiAlpha in multiAlphas:
+                tempPrefixes.append(prefix + [multiAlpha])
+        prefixes = tempPrefixes
+
+    for prefix in prefixes:
+        prefixWordDict[json.dumps(prefix)] = getWordsFromMultiAlphaPrefix(prefix)
+
+    return prefixWordDict
+        
+print 'Load anc list from anc File'
 for line in ancFile.readlines():
     lines = line.split( '\t')
     word = lines[0]
@@ -158,3 +179,15 @@ for line in ancFile.readlines():
 
     if len( ancList) == 15000:
         break
+print 'Set word hash table'
+print 'hash table : pre fix length - 1'
+PREFIXLEN_ONE = getPrefixWordDictFromPrefixLength(1)
+print 'hash table : pre fix length - 2'
+PREFIXLEN_TWO = getPrefixWordDictFromPrefixLength(2)
+print 'hash table : pre fix length - 3'
+PREFIXLEN_THREE = getPrefixWordDictFromPrefixLength(3)
+#print 'hash table : pre fix length - 4'
+#PREFIXLEN_FOUR = getPrefixWordDictFromPrefixLength(4)
+#print 'hash table : pre fix length - 5'
+#PREFIXLEN_FIVE = getPrefixWordDictFromPrefixLength(5)
+print 'Done'
