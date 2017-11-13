@@ -7,10 +7,12 @@
     <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
     <script src="{{ url_for('static', filename='mackenzie.js')}}"></script>
     <script type="text/javascript">
+      $.mobile.autoInitializePage = false;
       var socket;
       var keyboard;
       var cursor = 1;
       var windowIndex = [0,2];
+      var startTime;
 
       function setKeyboard() {
         $(".keycontainer").empty();
@@ -54,7 +56,8 @@
 	  });
 	  wordDiv.click(function(event){
 	    $("#selected").append(' '+$.trim($(this).text()));
-            if ($("#selected").text() == $("#target").text()) {
+            if ($("#selected").text() == $("#target").text().toLowerCase()) {
+              console.log("test");
               setTarget();
             }
 	    $("#input").empty();
@@ -71,6 +74,12 @@
       }
 
       function setTarget() {
+        if (startTime == undefined) {
+	  startTime = performance.now();
+	} else {
+	  console.log(performance.now() - startTime);
+	  startTime = performance.now();
+	}
         $("#target").text(mackenzies[getRandomInt()]);
       }
 
@@ -116,17 +125,16 @@
 		}
 	      });
 	    }
-	
 	});
       });
     </script>
     <meta charset="UTF-8">
     <title>multi cursor test</title>
   </head>
-  <body>
+  <body scroll="no" style="margin: 0; height: 100%; overflow: hidden;">
     <div id="target" style="height: 60px; width:100%; font-size:1.5em"></div>
     <div id="selected" style="height: 60px; width:100%; font-size:1.5em"></div>
-    <div id="word" style="height: 30px; width: 100%; font-size: 1.5em;"></div>
+    <div id="word" style="height: 30px; width: 100%; font-size: 1em;"></div>
     <div class="keycontainer" style="height: 30px; margin:auto; width: 100%; user-select: none; font-size: 1.5em;"></div>
     <div id="input" style="margin-top: 20px; height: 50px; width: 100%;" ></div>
   </body>

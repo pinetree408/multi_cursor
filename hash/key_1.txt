@@ -1,0 +1,82 @@
+{
+  "[\"aflx\"]": [
+    "nwz", 
+    "bit", 
+    "moq", 
+    "aflx", 
+    "cjkr", 
+    "dev", 
+    "hs", 
+    "gpuy"
+  ], 
+  "[\"nwz\"]": [
+    "dev", 
+    "moq", 
+    "aflx", 
+    "hs", 
+    "bit", 
+    "gpuy", 
+    "cjkr", 
+    "nwz"
+  ], 
+  "[\"gpuy\"]": [
+    "moq", 
+    "dev", 
+    "cjkr", 
+    "aflx", 
+    "hs", 
+    "gpuy", 
+    "nwz", 
+    "bit"
+  ], 
+  "[\"cjkr\"]": [
+    "moq", 
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "bit", 
+    "hs", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"moq\"]": [
+    "aflx", 
+    "gpuy", 
+    "nwz", 
+    "moq", 
+    "dev", 
+    "cjkr", 
+    "bit", 
+    "hs"
+  ], 
+  "[\"bit\"]": [
+    "hs", 
+    "moq", 
+    "nwz", 
+    "dev", 
+    "bit", 
+    "gpuy", 
+    "aflx", 
+    "cjkr"
+  ], 
+  "[\"dev\"]": [
+    "aflx", 
+    "dev", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "cjkr", 
+    "gpuy", 
+    "hs"
+  ], 
+  "[\"hs\"]": [
+    "aflx", 
+    "bit", 
+    "dev", 
+    "moq", 
+    "gpuy", 
+    "hs", 
+    "cjkr", 
+    "nwz"
+  ]
+}

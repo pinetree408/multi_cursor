@@ -159,7 +159,24 @@ def getPrefixWordDictFromPrefixLength(prefixLength):
         prefixWordDict[json.dumps(prefix)] = getWordsFromMultiAlphaPrefix(prefix)
 
     return prefixWordDict
-        
+
+
+def getStaticMultiAlphaDictFromPrefixLength(prefixLength):
+    staticMultiAlphaDict = {}
+
+    prefixes = [[]]
+    for i in range(prefixLength):
+        tempPrefixes = []
+        for prefix in prefixes:
+            for multiAlpha in multiAlphas:
+                tempPrefixes.append(prefix + [multiAlpha])
+        prefixes = tempPrefixes
+
+    for prefix in prefixes:
+        staticMultiAlphaDict[json.dumps(prefix)] = getStaticMultiAlphasFromPrefix(prefix)
+
+    return staticMultiAlphaDict
+
 print 'Load anc list from anc File'
 for line in ancFile.readlines():
     lines = line.split( '\t')
@@ -179,15 +196,20 @@ for line in ancFile.readlines():
 
     if len( ancList) == 15000:
         break
-print 'Set word hash table'
-print 'hash table : pre fix length - 1'
-PREFIXLEN_ONE = getPrefixWordDictFromPrefixLength(1)
-print 'hash table : pre fix length - 2'
-PREFIXLEN_TWO = getPrefixWordDictFromPrefixLength(2)
-print 'hash table : pre fix length - 3'
-PREFIXLEN_THREE = getPrefixWordDictFromPrefixLength(3)
-#print 'hash table : pre fix length - 4'
-#PREFIXLEN_FOUR = getPrefixWordDictFromPrefixLength(4)
-#print 'hash table : pre fix length - 5'
-#PREFIXLEN_FIVE = getPrefixWordDictFromPrefixLength(5)
+
+def setup():
+    print 'Set word hash table'
+    print 'hash table : pre fix length - 1'
+    PREFIXLEN_ONE = getPrefixWordDictFromPrefixLength(1)
+    PREFIXLEN_ONE_KEY = getStaticMultiAlphaDictFromPrefixLength(1)
+    print 'hash table : pre fix length - 2'
+    PREFIXLEN_TWO = getPrefixWordDictFromPrefixLength(2)
+    PREFIXLEN_TWO_KEY = getStaticMultiAlphaDictFromPrefixLength(2)
+    print 'hash table : pre fix length - 3'
+    PREFIXLEN_THREE = getPrefixWordDictFromPrefixLength(3)
+    PREFIXLEN_THREE_KEY = getStaticMultiAlphaDictFromPrefixLength(3)
+    #print 'hash table : pre fix length - 4'
+    #PREFIXLEN_FOUR = getPrefixWordDictFromPrefixLength(4)
+    #print 'hash table : pre fix length - 5'
+    #PREFIXLEN_FIVE = getPrefixWordDictFromPrefixLength(5)
 print 'Done'

@@ -1,0 +1,58 @@
+{
+  "[\"aflx\"]": [
+    "and", 
+    "a", 
+    "for", 
+    "as", 
+    "are"
+  ], 
+  "[\"nwz\"]": [
+    "was", 
+    "with", 
+    "n't", 
+    "not", 
+    "we"
+  ], 
+  "[\"gpuy\"]": [
+    "you", 
+    "uh", 
+    "yeah", 
+    "up", 
+    "people"
+  ], 
+  "[\"cjkr\"]": [
+    "know", 
+    "just", 
+    "can", 
+    "right", 
+    "could"
+  ], 
+  "[\"moq\"]": [
+    "of", 
+    "on", 
+    "or", 
+    "my", 
+    "more"
+  ], 
+  "[\"bit\"]": [
+    "the", 
+    "to", 
+    "in", 
+    "i", 
+    "that"
+  ], 
+  "[\"dev\"]": [
+    "do", 
+    "did", 
+    "even", 
+    "does", 
+    "very"
+  ], 
+  "[\"hs\"]": [
+    "have", 
+    "he", 
+    "so", 
+    "his", 
+    "has"
+  ]
+}

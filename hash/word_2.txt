@@ -1,0 +1,450 @@
+{
+  "[\"dev\", \"moq\"]": [
+    "do", 
+    "does", 
+    "down", 
+    "doing", 
+    "done"
+  ], 
+  "[\"dev\", \"cjkr\"]": [
+    "drug", 
+    "economic", 
+    "drive", 
+    "economy", 
+    "drugs"
+  ], 
+  "[\"aflx\", \"bit\"]": [
+    "at", 
+    "like", 
+    "about", 
+    "first", 
+    "little"
+  ], 
+  "[\"bit\", \"bit\"]": [
+    "it", 
+    "time", 
+    "its", 
+    "times", 
+    "big"
+  ], 
+  "[\"nwz\", \"hs\"]": [
+    "what", 
+    "when", 
+    "who", 
+    "which", 
+    "where"
+  ], 
+  "[\"dev\", \"gpuy\"]": [
+    "during", 
+    "due", 
+    "episode", 
+    "eyes", 
+    "europe"
+  ], 
+  "[\"aflx\", \"hs\"]": [
+    "as", 
+    "asked", 
+    "associated", 
+    "ask", 
+    "association"
+  ], 
+  "[\"moq\", \"aflx\"]": [
+    "of", 
+    "may", 
+    "many", 
+    "make", 
+    "made"
+  ], 
+  "[\"aflx\", \"moq\"]": [
+    "for", 
+    "lot", 
+    "long", 
+    "found", 
+    "american"
+  ], 
+  "[\"bit\", \"cjkr\"]": [
+    "trying", 
+    "true", 
+    "try", 
+    "treatment", 
+    "tried"
+  ], 
+  "[\"hs\", \"gpuy\"]": [
+    "such", 
+    "sure", 
+    "system", 
+    "human", 
+    "support"
+  ], 
+  "[\"cjkr\", \"aflx\"]": [
+    "can", 
+    "ca", 
+    "clinton", 
+    "case", 
+    "called"
+  ], 
+  "[\"moq\", \"gpuy\"]": [
+    "my", 
+    "out", 
+    "our", 
+    "much", 
+    "must"
+  ], 
+  "[\"hs\", \"aflx\"]": [
+    "have", 
+    "has", 
+    "had", 
+    "said", 
+    "say"
+  ], 
+  "[\"gpuy\", \"nwz\"]": [
+    "under", 
+    "until", 
+    "united", 
+    "university", 
+    "understand"
+  ], 
+  "[\"cjkr\", \"nwz\"]": [
+    "know", 
+    "known", 
+    "knew", 
+    "rna", 
+    "knows"
+  ], 
+  "[\"hs\", \"cjkr\"]": [
+    "school", 
+    "schools", 
+    "scene", 
+    "science", 
+    "screen"
+  ], 
+  "[\"hs\", \"moq\"]": [
+    "so", 
+    "some", 
+    "how", 
+    "something", 
+    "house"
+  ], 
+  "[\"dev\", \"nwz\"]": [
+    "end", 
+    "enough", 
+    "dna", 
+    "english", 
+    "entire"
+  ], 
+  "[\"aflx\", \"gpuy\"]": [
+    "against", 
+    "again", 
+    "ago", 
+    "age", 
+    "further"
+  ], 
+  "[\"bit\", \"nwz\"]": [
+    "in", 
+    "into", 
+    "information", 
+    "including", 
+    "instead"
+  ], 
+  "[\"aflx\", \"nwz\"]": [
+    "and", 
+    "an", 
+    "any", 
+    "another", 
+    "analysis"
+  ], 
+  "[\"cjkr\", \"bit\"]": [
+    "right", 
+    "kind", 
+    "city", 
+    "kids", 
+    "risk"
+  ], 
+  "[\"nwz\", \"dev\"]": [
+    "we", 
+    "were", 
+    "well", 
+    "new", 
+    "never"
+  ], 
+  "[\"cjkr\", \"gpuy\"]": [
+    "just", 
+    "run", 
+    "current", 
+    "culture", 
+    "july"
+  ], 
+  "[\"cjkr\", \"hs\"]": [
+    "children", 
+    "change", 
+    "changes", 
+    "child", 
+    "church"
+  ], 
+  "[\"moq\", \"hs\"]": [
+    "oh", 
+    "mhm", 
+    "ms", 
+    "ohio", 
+    "msbelle"
+  ], 
+  "[\"moq\", \"bit\"]": [
+    "other", 
+    "might", 
+    "others", 
+    "minutes", 
+    "mind"
+  ], 
+  "[\"dev\", \"aflx\"]": [
+    "each", 
+    "day", 
+    "data", 
+    "expression", 
+    "days"
+  ], 
+  "[\"cjkr\", \"cjkr\"]": [
+    "credit", 
+    "created", 
+    "critics", 
+    "critical", 
+    "crime"
+  ], 
+  "[\"cjkr\", \"moq\"]": [
+    "could", 
+    "come", 
+    "course", 
+    "company", 
+    "control"
+  ], 
+  "[\"gpuy\", \"dev\"]": [
+    "yeah", 
+    "people", 
+    "get", 
+    "years", 
+    "year"
+  ], 
+  "[\"cjkr\", \"dev\"]": [
+    "really", 
+    "cells", 
+    "real", 
+    "cell", 
+    "results"
+  ], 
+  "[\"dev\", \"bit\"]": [
+    "did", 
+    "different", 
+    "either", 
+    "et", 
+    "disease"
+  ], 
+  "[\"dev\", \"hs\"]": [
+    "especially", 
+    "established", 
+    "estimated", 
+    "estimate", 
+    "estimates"
+  ], 
+  "[\"bit\", \"gpuy\"]": [
+    "but", 
+    "by", 
+    "business", 
+    "bush", 
+    "buffy"
+  ], 
+  "[\"dev\", \"dev\"]": [
+    "even", 
+    "very", 
+    "every", 
+    "ever", 
+    "everything"
+  ], 
+  "[\"hs\", \"nwz\"]": [
+    "snow", 
+    "sweet", 
+    "swimming", 
+    "switch", 
+    "swing"
+  ], 
+  "[\"moq\", \"moq\"]": [
+    "more", 
+    "most", 
+    "money", 
+    "movie", 
+    "months"
+  ], 
+  "[\"moq\", \"nwz\"]": [
+    "on", 
+    "only", 
+    "own", 
+    "once", 
+    "ones"
+  ], 
+  "[\"moq\", \"dev\"]": [
+    "me", 
+    "over", 
+    "mean", 
+    "men", 
+    "means"
+  ], 
+  "[\"nwz\", \"aflx\"]": [
+    "was", 
+    "way", 
+    "want", 
+    "national", 
+    "name"
+  ], 
+  "[\"moq\", \"cjkr\"]": [
+    "or", 
+    "okay", 
+    "order", 
+    "original", 
+    "organization"
+  ], 
+  "[\"gpuy\", \"cjkr\"]": [
+    "president", 
+    "probably", 
+    "great", 
+    "pretty", 
+    "group"
+  ], 
+  "[\"bit\", \"dev\"]": [
+    "be", 
+    "been", 
+    "because", 
+    "between", 
+    "before"
+  ], 
+  "[\"nwz\", \"cjkr\"]": [
+    "wrong", 
+    "wrote", 
+    "writing", 
+    "written", 
+    "write"
+  ], 
+  "[\"gpuy\", \"hs\"]": [
+    "uh", 
+    "used", 
+    "uh-huh", 
+    "use", 
+    "us"
+  ], 
+  "[\"nwz\", \"moq\"]": [
+    "not", 
+    "would", 
+    "no", 
+    "now", 
+    "work"
+  ], 
+  "[\"hs\", \"hs\"]": [
+    "she", 
+    "should", 
+    "show", 
+    "shown", 
+    "shows"
+  ], 
+  "[\"nwz\", \"nwz\"]": [
+    "www", 
+    "wnt", 
+    "nn", 
+    "wwii", 
+    "zn"
+  ], 
+  "[\"hs\", \"bit\"]": [
+    "his", 
+    "him", 
+    "still", 
+    "since", 
+    "state"
+  ], 
+  "[\"hs\", \"dev\"]": [
+    "he", 
+    "her", 
+    "see", 
+    "here", 
+    "set"
+  ], 
+  "[\"gpuy\", \"bit\"]": [
+    "give", 
+    "given", 
+    "piece", 
+    "girl", 
+    "picture"
+  ], 
+  "[\"bit\", \"moq\"]": [
+    "to", 
+    "too", 
+    "both", 
+    "today", 
+    "book"
+  ], 
+  "[\"aflx\", \"cjkr\"]": [
+    "are", 
+    "from", 
+    "around", 
+    "actually", 
+    "area"
+  ], 
+  "[\"aflx\", \"aflx\"]": [
+    "all", 
+    "also", 
+    "after", 
+    "last", 
+    "always"
+  ], 
+  "[\"nwz\", \"gpuy\"]": [
+    "number", 
+    "nyt", 
+    "numbers", 
+    "wp", 
+    "nuclear"
+  ], 
+  "[\"nwz\", \"bit\"]": [
+    "with", 
+    "will", 
+    "without", 
+    "within", 
+    "night"
+  ], 
+  "[\"bit\", \"hs\"]": [
+    "the", 
+    "that", 
+    "is", 
+    "they", 
+    "this"
+  ], 
+  "[\"aflx\", \"dev\"]": [
+    "few", 
+    "less", 
+    "least", 
+    "let", 
+    "feel"
+  ], 
+  "[\"gpuy\", \"gpuy\"]": [
+    "up", 
+    "put", 
+    "public", 
+    "guess", 
+    "guy"
+  ], 
+  "[\"gpuy\", \"moq\"]": [
+    "you", 
+    "um", 
+    "your", 
+    "good", 
+    "go"
+  ], 
+  "[\"bit\", \"aflx\"]": [
+    "if", 
+    "back", 
+    "take", 
+    "bad", 
+    "table"
+  ], 
+  "[\"gpuy\", \"aflx\"]": [
+    "part", 
+    "place", 
+    "patients", 
+    "play", 
+    "pay"
+  ]
+}

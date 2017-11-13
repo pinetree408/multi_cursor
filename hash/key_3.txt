@@ -1,0 +1,5122 @@
+{
+  "[\"nwz\", \"dev\", \"hs\"]": [
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"moq\", \"bit\"]": [
+    "dev", 
+    "hs", 
+    "bit", 
+    "moq", 
+    "aflx", 
+    "cjkr", 
+    "nwz", 
+    "gpuy"
+  ], 
+  "[\"gpuy\", \"dev\", \"dev\"]": [
+    "cjkr", 
+    "gpuy", 
+    "aflx", 
+    "dev", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"dev\", \"dev\", \"cjkr\"]": [
+    "gpuy", 
+    "bit", 
+    "aflx", 
+    "hs", 
+    "cjkr", 
+    "dev", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"nwz\", \"aflx\", \"bit\"]": [
+    "bit", 
+    "cjkr", 
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "hs", 
+    "aflx", 
+    "nwz"
+  ], 
+  "[\"nwz\", \"bit\", \"gpuy\"]": [
+    "hs", 
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"cjkr\", \"nwz\"]": [
+    "aflx", 
+    "bit", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"gpuy\", \"dev\"]": [
+    "gpuy", 
+    "bit", 
+    "dev", 
+    "moq", 
+    "hs", 
+    "aflx", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"bit\", \"dev\"]": [
+    "hs", 
+    "bit", 
+    "dev", 
+    "aflx", 
+    "nwz", 
+    "gpuy", 
+    "moq", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"dev\", \"moq\"]": [
+    "nwz", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"hs\", \"cjkr\"]": [
+    "aflx", 
+    "bit", 
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"hs\", \"dev\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"cjkr\", \"aflx\"]": [
+    "gpuy", 
+    "aflx", 
+    "nwz", 
+    "dev", 
+    "hs", 
+    "moq", 
+    "bit", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"cjkr\", \"bit\"]": [
+    "bit", 
+    "dev", 
+    "gpuy", 
+    "hs", 
+    "moq", 
+    "nwz", 
+    "cjkr", 
+    "aflx"
+  ], 
+  "[\"nwz\", \"gpuy\", \"hs\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"cjkr\", \"bit\"]": [
+    "dev", 
+    "bit", 
+    "aflx", 
+    "nwz", 
+    "gpuy", 
+    "hs", 
+    "cjkr", 
+    "moq"
+  ], 
+  "[\"gpuy\", \"dev\", \"moq\"]": [
+    "gpuy", 
+    "cjkr", 
+    "moq", 
+    "dev", 
+    "aflx", 
+    "bit", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"cjkr\", \"dev\", \"dev\"]": [
+    "gpuy", 
+    "bit", 
+    "dev", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "aflx", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"dev\", \"hs\"]": [
+    "bit", 
+    "cjkr", 
+    "gpuy", 
+    "dev", 
+    "hs", 
+    "aflx", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"dev\", \"aflx\", \"dev\"]": [
+    "cjkr", 
+    "bit", 
+    "moq", 
+    "dev", 
+    "gpuy", 
+    "aflx", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"hs\", \"dev\", \"cjkr\"]": [
+    "dev", 
+    "bit", 
+    "moq", 
+    "gpuy", 
+    "cjkr", 
+    "hs", 
+    "aflx", 
+    "nwz"
+  ], 
+  "[\"bit\", \"aflx\", \"hs\"]": [
+    "dev", 
+    "bit", 
+    "cjkr", 
+    "aflx", 
+    "hs", 
+    "moq", 
+    "gpuy", 
+    "nwz"
+  ], 
+  "[\"gpuy\", \"dev\", \"aflx\"]": [
+    "hs", 
+    "cjkr", 
+    "aflx", 
+    "bit", 
+    "nwz", 
+    "dev", 
+    "gpuy", 
+    "moq"
+  ], 
+  "[\"hs\", \"moq\", \"bit\"]": [
+    "dev", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"cjkr\", \"hs\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"nwz\", \"bit\"]": [
+    "bit", 
+    "moq", 
+    "hs", 
+    "nwz", 
+    "aflx", 
+    "dev", 
+    "gpuy", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"nwz\", \"nwz\"]": [
+    "moq", 
+    "dev", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"cjkr\", \"gpuy\"]": [
+    "dev", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"bit\", \"gpuy\"]": [
+    "dev", 
+    "hs", 
+    "nwz", 
+    "aflx", 
+    "gpuy", 
+    "cjkr", 
+    "moq", 
+    "bit"
+  ], 
+  "[\"dev\", \"moq\", \"gpuy\"]": [
+    "aflx", 
+    "bit", 
+    "hs", 
+    "gpuy", 
+    "dev", 
+    "cjkr", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"aflx\", \"aflx\", \"dev\"]": [
+    "moq", 
+    "aflx", 
+    "bit", 
+    "dev", 
+    "gpuy", 
+    "hs", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"dev\", \"gpuy\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"gpuy\", \"bit\"]": [
+    "aflx", 
+    "dev", 
+    "bit", 
+    "hs", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"hs\", \"nwz\", \"gpuy\"]": [
+    "hs", 
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"cjkr\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"gpuy\", \"cjkr\"]": [
+    "hs", 
+    "dev", 
+    "cjkr", 
+    "gpuy", 
+    "bit", 
+    "aflx", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"nwz\", \"hs\", \"moq\"]": [
+    "aflx", 
+    "hs", 
+    "moq", 
+    "dev", 
+    "gpuy", 
+    "bit", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"gpuy\", \"moq\"]": [
+    "aflx", 
+    "moq", 
+    "cjkr", 
+    "bit", 
+    "gpuy", 
+    "nwz", 
+    "hs", 
+    "dev"
+  ], 
+  "[\"hs\", \"moq\", \"moq\"]": [
+    "dev", 
+    "nwz", 
+    "moq", 
+    "cjkr", 
+    "bit", 
+    "hs", 
+    "aflx", 
+    "gpuy"
+  ], 
+  "[\"aflx\", \"aflx\", \"gpuy\"]": [
+    "moq", 
+    "hs", 
+    "bit", 
+    "gpuy", 
+    "nwz", 
+    "aflx", 
+    "dev", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"hs\", \"dev\"]": [
+    "aflx", 
+    "dev", 
+    "cjkr", 
+    "hs", 
+    "gpuy", 
+    "bit", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"cjkr\", \"dev\", \"nwz\"]": [
+    "bit", 
+    "aflx", 
+    "nwz", 
+    "hs", 
+    "dev", 
+    "moq", 
+    "cjkr", 
+    "gpuy"
+  ], 
+  "[\"aflx\", \"aflx\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "dev", 
+    "hs", 
+    "cjkr", 
+    "bit", 
+    "nwz", 
+    "moq"
+  ], 
+  "[\"aflx\", \"bit\", \"aflx\"]": [
+    "dev", 
+    "aflx", 
+    "bit", 
+    "moq", 
+    "nwz", 
+    "cjkr", 
+    "gpuy", 
+    "hs"
+  ], 
+  "[\"hs\", \"hs\", \"moq\"]": [
+    "nwz", 
+    "gpuy", 
+    "cjkr", 
+    "bit", 
+    "moq", 
+    "dev", 
+    "aflx", 
+    "hs"
+  ], 
+  "[\"gpuy\", \"aflx\", \"cjkr\"]": [
+    "bit", 
+    "dev", 
+    "cjkr", 
+    "aflx", 
+    "moq", 
+    "gpuy", 
+    "hs", 
+    "nwz"
+  ], 
+  "[\"gpuy\", \"gpuy\", \"nwz\"]": [
+    "nwz", 
+    "bit", 
+    "hs", 
+    "dev", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq"
+  ], 
+  "[\"nwz\", \"cjkr\", \"gpuy\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"moq\", \"bit\"]": [
+    "nwz", 
+    "dev", 
+    "cjkr", 
+    "hs", 
+    "aflx", 
+    "bit", 
+    "moq", 
+    "gpuy"
+  ], 
+  "[\"moq\", \"bit\", \"hs\"]": [
+    "dev", 
+    "hs", 
+    "bit", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "aflx", 
+    "nwz"
+  ], 
+  "[\"bit\", \"moq\", \"bit\"]": [
+    "hs", 
+    "aflx", 
+    "bit", 
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"gpuy\", \"dev\"]": [
+    "cjkr", 
+    "nwz", 
+    "aflx", 
+    "dev", 
+    "hs", 
+    "gpuy", 
+    "moq", 
+    "bit"
+  ], 
+  "[\"cjkr\", \"dev\", \"bit\"]": [
+    "gpuy", 
+    "aflx", 
+    "bit", 
+    "cjkr", 
+    "dev", 
+    "moq", 
+    "hs", 
+    "nwz"
+  ], 
+  "[\"hs\", \"hs\", \"gpuy\"]": [
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"gpuy\", \"gpuy\"]": [
+    "aflx", 
+    "gpuy", 
+    "hs", 
+    "dev", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"aflx\", \"hs\"]": [
+    "hs", 
+    "bit", 
+    "moq", 
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"bit\", \"moq\"]": [
+    "cjkr", 
+    "dev", 
+    "nwz", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "bit", 
+    "hs"
+  ], 
+  "[\"gpuy\", \"aflx\", \"nwz\"]": [
+    "dev", 
+    "bit", 
+    "cjkr", 
+    "gpuy", 
+    "aflx", 
+    "hs", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"bit\", \"nwz\", \"moq\"]": [
+    "gpuy", 
+    "aflx", 
+    "hs", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"nwz\", \"cjkr\"]": [
+    "dev", 
+    "aflx", 
+    "nwz", 
+    "moq", 
+    "hs", 
+    "gpuy", 
+    "bit", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"bit\", \"hs\"]": [
+    "bit", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"nwz\", \"cjkr\"]": [
+    "moq", 
+    "aflx", 
+    "bit", 
+    "gpuy", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"aflx\", \"aflx\"]": [
+    "aflx", 
+    "hs", 
+    "bit", 
+    "cjkr", 
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"hs\", \"hs\", \"cjkr\"]": [
+    "bit", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"cjkr\", \"cjkr\"]": [
+    "moq", 
+    "dev", 
+    "gpuy", 
+    "aflx", 
+    "bit", 
+    "hs", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"gpuy\", \"aflx\"]": [
+    "aflx", 
+    "cjkr", 
+    "dev", 
+    "bit", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"moq\", \"nwz\", \"cjkr\"]": [
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"cjkr\", \"gpuy\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"nwz\", \"gpuy\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"gpuy\", \"hs\"]": [
+    "bit", 
+    "gpuy", 
+    "aflx", 
+    "hs", 
+    "cjkr", 
+    "moq", 
+    "dev", 
+    "nwz"
+  ], 
+  "[\"bit\", \"bit\", \"aflx\"]": [
+    "aflx", 
+    "hs", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "gpuy", 
+    "moq", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"aflx\", \"gpuy\"]": [
+    "dev", 
+    "cjkr", 
+    "aflx", 
+    "hs", 
+    "moq", 
+    "gpuy", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"moq\", \"nwz\", \"dev\"]": [
+    "hs", 
+    "nwz", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"aflx\", \"nwz\"]": [
+    "cjkr", 
+    "gpuy", 
+    "nwz", 
+    "bit", 
+    "aflx", 
+    "hs", 
+    "moq", 
+    "dev"
+  ], 
+  "[\"bit\", \"aflx\", \"nwz\"]": [
+    "cjkr", 
+    "dev", 
+    "nwz", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "bit", 
+    "hs"
+  ], 
+  "[\"bit\", \"dev\", \"gpuy\"]": [
+    "bit", 
+    "aflx", 
+    "moq", 
+    "gpuy", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"moq\", \"aflx\"]": [
+    "aflx", 
+    "dev", 
+    "bit", 
+    "gpuy", 
+    "cjkr", 
+    "moq", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"bit\", \"nwz\", \"bit\"]": [
+    "dev", 
+    "moq", 
+    "cjkr", 
+    "bit", 
+    "aflx", 
+    "nwz", 
+    "hs", 
+    "gpuy"
+  ], 
+  "[\"dev\", \"dev\", \"dev\"]": [
+    "cjkr", 
+    "nwz", 
+    "dev", 
+    "gpuy", 
+    "bit", 
+    "moq", 
+    "aflx", 
+    "hs"
+  ], 
+  "[\"gpuy\", \"gpuy\", \"gpuy\"]": [
+    "hs", 
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "aflx", 
+    "bit", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"nwz\", \"dev\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"bit\", \"moq\"]": [
+    "gpuy", 
+    "dev", 
+    "bit", 
+    "moq", 
+    "cjkr", 
+    "nwz", 
+    "aflx", 
+    "hs"
+  ], 
+  "[\"moq\", \"nwz\", \"aflx\"]": [
+    "gpuy", 
+    "bit", 
+    "aflx", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"moq\", \"moq\"]": [
+    "cjkr", 
+    "bit", 
+    "dev", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "hs", 
+    "nwz"
+  ], 
+  "[\"bit\", \"hs\", \"cjkr\"]": [
+    "moq", 
+    "dev", 
+    "aflx", 
+    "bit", 
+    "hs", 
+    "gpuy", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"bit\", \"dev\"]": [
+    "dev", 
+    "bit", 
+    "moq", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"gpuy\", \"aflx\", \"aflx\"]": [
+    "nwz", 
+    "gpuy", 
+    "cjkr", 
+    "hs", 
+    "dev", 
+    "bit", 
+    "aflx", 
+    "moq"
+  ], 
+  "[\"nwz\", \"moq\", \"moq\"]": [
+    "dev", 
+    "aflx", 
+    "bit", 
+    "nwz", 
+    "gpuy", 
+    "moq", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"hs\", \"moq\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"aflx\", \"hs\"]": [
+    "hs", 
+    "bit", 
+    "dev", 
+    "aflx", 
+    "nwz", 
+    "cjkr", 
+    "gpuy", 
+    "moq"
+  ], 
+  "[\"bit\", \"gpuy\", \"bit\"]": [
+    "aflx", 
+    "bit", 
+    "dev", 
+    "gpuy", 
+    "nwz", 
+    "moq", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"dev\", \"hs\"]": [
+    "hs", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"dev\", \"dev\"]": [
+    "nwz", 
+    "aflx", 
+    "cjkr", 
+    "bit", 
+    "dev", 
+    "moq", 
+    "hs", 
+    "gpuy"
+  ], 
+  "[\"cjkr\", \"nwz\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"moq\", \"hs\"]": [
+    "dev", 
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"moq\", \"cjkr\"]": [
+    "bit", 
+    "cjkr", 
+    "hs", 
+    "moq", 
+    "nwz", 
+    "dev", 
+    "aflx", 
+    "gpuy"
+  ], 
+  "[\"dev\", \"dev\", \"bit\"]": [
+    "dev", 
+    "aflx", 
+    "bit", 
+    "cjkr", 
+    "nwz", 
+    "moq", 
+    "gpuy", 
+    "hs"
+  ], 
+  "[\"bit\", \"cjkr\", \"moq\"]": [
+    "gpuy", 
+    "nwz", 
+    "aflx", 
+    "bit", 
+    "cjkr", 
+    "moq", 
+    "hs", 
+    "dev"
+  ], 
+  "[\"moq\", \"hs\", \"gpuy\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"nwz\", \"hs\"]": [
+    "nwz", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"dev\", \"gpuy\"]": [
+    "moq", 
+    "gpuy", 
+    "bit", 
+    "cjkr", 
+    "aflx", 
+    "dev", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"nwz\", \"bit\", \"moq\"]": [
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"gpuy\", \"moq\"]": [
+    "moq", 
+    "gpuy", 
+    "dev", 
+    "aflx", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"aflx\", \"dev\"]": [
+    "dev", 
+    "gpuy", 
+    "aflx", 
+    "bit", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"bit\", \"hs\"]": [
+    "hs", 
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"moq\", \"nwz\"]": [
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "aflx", 
+    "hs", 
+    "bit", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"bit\", \"dev\"]": [
+    "dev", 
+    "gpuy", 
+    "cjkr", 
+    "aflx", 
+    "nwz", 
+    "bit", 
+    "moq", 
+    "hs"
+  ], 
+  "[\"cjkr\", \"nwz\", \"moq\"]": [
+    "nwz", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "hs"
+  ], 
+  "[\"hs\", \"cjkr\", \"moq\"]": [
+    "cjkr", 
+    "bit", 
+    "gpuy", 
+    "moq", 
+    "aflx", 
+    "dev", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"dev\", \"bit\", \"hs\"]": [
+    "bit", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "dev", 
+    "nwz", 
+    "moq", 
+    "hs"
+  ], 
+  "[\"bit\", \"hs\", \"bit\"]": [
+    "hs", 
+    "nwz", 
+    "cjkr", 
+    "aflx", 
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "bit"
+  ], 
+  "[\"dev\", \"moq\", \"cjkr\"]": [
+    "gpuy", 
+    "bit", 
+    "aflx", 
+    "moq", 
+    "hs", 
+    "cjkr", 
+    "dev", 
+    "nwz"
+  ], 
+  "[\"gpuy\", \"cjkr\", \"bit\"]": [
+    "moq", 
+    "nwz", 
+    "dev", 
+    "cjkr", 
+    "hs", 
+    "aflx", 
+    "gpuy", 
+    "bit"
+  ], 
+  "[\"bit\", \"hs\", \"aflx\"]": [
+    "bit", 
+    "nwz", 
+    "aflx", 
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"gpuy\", \"nwz\"]": [
+    "cjkr", 
+    "dev", 
+    "nwz", 
+    "gpuy", 
+    "bit", 
+    "aflx", 
+    "moq", 
+    "hs"
+  ], 
+  "[\"hs\", \"aflx\", \"aflx\"]": [
+    "aflx", 
+    "dev", 
+    "bit", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"aflx\", \"cjkr\"]": [
+    "dev", 
+    "cjkr", 
+    "moq", 
+    "bit", 
+    "aflx", 
+    "hs", 
+    "gpuy", 
+    "nwz"
+  ], 
+  "[\"bit\", \"moq\", \"nwz\"]": [
+    "aflx", 
+    "nwz", 
+    "dev", 
+    "bit", 
+    "gpuy", 
+    "hs", 
+    "moq", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"cjkr\", \"hs\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"nwz\", \"bit\"]": [
+    "bit", 
+    "dev", 
+    "moq", 
+    "aflx", 
+    "cjkr", 
+    "gpuy", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"moq\", \"cjkr\", \"moq\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"dev\", \"cjkr\"]": [
+    "gpuy", 
+    "bit", 
+    "aflx", 
+    "moq", 
+    "dev", 
+    "cjkr", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"cjkr\", \"gpuy\", \"gpuy\"]": [
+    "hs", 
+    "gpuy", 
+    "dev", 
+    "aflx", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"cjkr\", \"dev\"]": [
+    "dev", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"aflx\", \"dev\"]": [
+    "aflx", 
+    "hs", 
+    "nwz", 
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"gpuy\", \"nwz\"]": [
+    "dev", 
+    "bit", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "aflx", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"aflx\", \"bit\"]": [
+    "hs", 
+    "nwz", 
+    "dev", 
+    "bit", 
+    "cjkr", 
+    "aflx", 
+    "moq", 
+    "gpuy"
+  ], 
+  "[\"gpuy\", \"hs\", \"bit\"]": [
+    "nwz", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"aflx\", \"gpuy\"]": [
+    "hs", 
+    "dev", 
+    "nwz", 
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "bit", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"cjkr\", \"cjkr\"]": [
+    "moq", 
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"cjkr\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"hs\", \"gpuy\"]": [
+    "aflx", 
+    "hs", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"nwz\", \"cjkr\", \"hs\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"nwz\", \"moq\"]": [
+    "bit", 
+    "nwz", 
+    "dev", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"dev\", \"moq\"]": [
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"aflx\", \"nwz\"]": [
+    "dev", 
+    "cjkr", 
+    "gpuy", 
+    "nwz", 
+    "aflx", 
+    "hs", 
+    "moq", 
+    "bit"
+  ], 
+  "[\"moq\", \"bit\", \"cjkr\"]": [
+    "dev", 
+    "cjkr", 
+    "hs", 
+    "aflx", 
+    "nwz", 
+    "gpuy", 
+    "moq", 
+    "bit"
+  ], 
+  "[\"moq\", \"dev\", \"nwz\"]": [
+    "bit", 
+    "gpuy", 
+    "aflx", 
+    "dev", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"aflx\", \"bit\"]": [
+    "aflx", 
+    "bit", 
+    "gpuy", 
+    "hs", 
+    "nwz", 
+    "moq", 
+    "cjkr", 
+    "dev"
+  ], 
+  "[\"gpuy\", \"bit\", \"gpuy\"]": [
+    "aflx", 
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "hs", 
+    "cjkr", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"gpuy\", \"cjkr\", \"cjkr\"]": [
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"bit\", \"dev\", \"nwz\"]": [
+    "dev", 
+    "nwz", 
+    "bit", 
+    "hs", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq"
+  ], 
+  "[\"aflx\", \"nwz\", \"dev\"]": [
+    "cjkr", 
+    "dev", 
+    "hs", 
+    "gpuy", 
+    "moq", 
+    "aflx", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"nwz\", \"nwz\", \"hs\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"dev\", \"aflx\"]": [
+    "bit", 
+    "dev", 
+    "hs", 
+    "cjkr", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"aflx\", \"aflx\", \"hs\"]": [
+    "moq", 
+    "bit", 
+    "hs", 
+    "cjkr", 
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "nwz"
+  ], 
+  "[\"dev\", \"gpuy\", \"bit\"]": [
+    "hs", 
+    "bit", 
+    "nwz", 
+    "cjkr", 
+    "gpuy", 
+    "dev", 
+    "aflx", 
+    "moq"
+  ], 
+  "[\"cjkr\", \"aflx\", \"cjkr\"]": [
+    "dev", 
+    "cjkr", 
+    "bit", 
+    "hs", 
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "nwz"
+  ], 
+  "[\"aflx\", \"hs\", \"aflx\"]": [
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"moq\", \"nwz\"]": [
+    "dev", 
+    "nwz", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "bit", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"aflx\", \"cjkr\"]": [
+    "dev", 
+    "cjkr", 
+    "bit", 
+    "moq", 
+    "hs", 
+    "gpuy", 
+    "aflx", 
+    "nwz"
+  ], 
+  "[\"aflx\", \"hs\", \"bit\"]": [
+    "aflx", 
+    "dev", 
+    "hs", 
+    "cjkr", 
+    "moq", 
+    "bit", 
+    "gpuy", 
+    "nwz"
+  ], 
+  "[\"nwz\", \"dev\", \"aflx\"]": [
+    "aflx", 
+    "cjkr", 
+    "bit", 
+    "gpuy", 
+    "hs", 
+    "dev", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"bit\", \"aflx\", \"gpuy\"]": [
+    "dev", 
+    "gpuy", 
+    "hs", 
+    "aflx", 
+    "nwz", 
+    "moq", 
+    "bit", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"bit\", \"dev\"]": [
+    "moq", 
+    "dev", 
+    "hs", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"cjkr\", \"moq\", \"aflx\"]": [
+    "aflx", 
+    "dev", 
+    "moq", 
+    "gpuy", 
+    "hs", 
+    "bit", 
+    "cjkr", 
+    "nwz"
+  ], 
+  "[\"dev\", \"dev\", \"moq\"]": [
+    "moq", 
+    "aflx", 
+    "cjkr", 
+    "bit", 
+    "gpuy", 
+    "dev", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"gpuy\", \"dev\", \"cjkr\"]": [
+    "hs", 
+    "cjkr", 
+    "aflx", 
+    "moq", 
+    "bit", 
+    "dev", 
+    "gpuy", 
+    "nwz"
+  ], 
+  "[\"nwz\", \"cjkr\", \"moq\"]": [
+    "nwz", 
+    "bit", 
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"moq\", \"aflx\"]": [
+    "aflx", 
+    "nwz", 
+    "dev", 
+    "cjkr", 
+    "bit", 
+    "moq", 
+    "hs", 
+    "gpuy"
+  ], 
+  "[\"gpuy\", \"nwz\", \"dev\"]": [
+    "dev", 
+    "aflx", 
+    "moq", 
+    "gpuy", 
+    "nwz", 
+    "bit", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"bit\", \"nwz\"]": [
+    "dev", 
+    "bit", 
+    "nwz", 
+    "gpuy", 
+    "hs", 
+    "cjkr", 
+    "aflx", 
+    "moq"
+  ], 
+  "[\"dev\", \"dev\", \"gpuy\"]": [
+    "cjkr", 
+    "aflx", 
+    "dev", 
+    "bit", 
+    "moq", 
+    "gpuy", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"hs\", \"hs\", \"hs\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"bit\", \"bit\"]": [
+    "aflx", 
+    "moq", 
+    "cjkr", 
+    "gpuy", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"hs\", \"bit\", \"bit\"]": [
+    "aflx", 
+    "dev", 
+    "gpuy", 
+    "bit", 
+    "cjkr", 
+    "moq", 
+    "hs", 
+    "nwz"
+  ], 
+  "[\"bit\", \"nwz\", \"gpuy\"]": [
+    "gpuy", 
+    "cjkr", 
+    "aflx", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"bit\", \"gpuy\", \"gpuy\"]": [
+    "dev", 
+    "bit", 
+    "hs", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"bit\", \"aflx\"]": [
+    "aflx", 
+    "dev", 
+    "nwz", 
+    "moq", 
+    "gpuy", 
+    "bit", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"aflx\", \"nwz\"]": [
+    "bit", 
+    "nwz", 
+    "cjkr", 
+    "dev", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "hs"
+  ], 
+  "[\"moq\", \"nwz\", \"moq\"]": [
+    "nwz", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"bit\", \"cjkr\"]": [
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "cjkr", 
+    "hs", 
+    "nwz"
+  ], 
+  "[\"nwz\", \"cjkr\", \"dev\"]": [
+    "hs", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"nwz\", \"hs\", \"dev\"]": [
+    "nwz", 
+    "cjkr", 
+    "bit", 
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "hs"
+  ], 
+  "[\"moq\", \"aflx\", \"dev\"]": [
+    "dev", 
+    "cjkr", 
+    "bit", 
+    "moq", 
+    "nwz", 
+    "aflx", 
+    "gpuy", 
+    "hs"
+  ], 
+  "[\"moq\", \"moq\", \"cjkr\"]": [
+    "dev", 
+    "nwz", 
+    "aflx", 
+    "bit", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "hs"
+  ], 
+  "[\"hs\", \"nwz\", \"moq\"]": [
+    "nwz", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "hs"
+  ], 
+  "[\"aflx\", \"moq\", \"hs\"]": [
+    "bit", 
+    "hs", 
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"moq\", \"nwz\"]": [
+    "bit", 
+    "hs", 
+    "dev", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "nwz", 
+    "moq"
+  ], 
+  "[\"hs\", \"gpuy\", \"aflx\"]": [
+    "aflx", 
+    "cjkr", 
+    "bit", 
+    "nwz", 
+    "dev", 
+    "moq", 
+    "gpuy", 
+    "hs"
+  ], 
+  "[\"moq\", \"aflx\", \"hs\"]": [
+    "hs", 
+    "bit", 
+    "cjkr", 
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "dev", 
+    "nwz"
+  ], 
+  "[\"dev\", \"hs\", \"cjkr\"]": [
+    "aflx", 
+    "nwz", 
+    "hs", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"cjkr\", \"bit\"]": [
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "hs", 
+    "bit", 
+    "aflx", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"gpuy\", \"moq\"]": [
+    "bit", 
+    "hs", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz"
+  ], 
+  "[\"moq\", \"aflx\", \"aflx\"]": [
+    "bit", 
+    "dev", 
+    "aflx", 
+    "hs", 
+    "moq", 
+    "cjkr", 
+    "nwz", 
+    "gpuy"
+  ], 
+  "[\"dev\", \"aflx\", \"moq\"]": [
+    "nwz", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "dev", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"hs\", \"bit\"]": [
+    "aflx", 
+    "gpuy", 
+    "cjkr", 
+    "bit", 
+    "nwz", 
+    "dev", 
+    "moq", 
+    "hs"
+  ], 
+  "[\"cjkr\", \"bit\", \"moq\"]": [
+    "moq", 
+    "bit", 
+    "hs", 
+    "aflx", 
+    "gpuy", 
+    "dev", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"hs\", \"cjkr\"]": [
+    "dev", 
+    "bit", 
+    "hs", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"gpuy\", \"nwz\"]": [
+    "cjkr", 
+    "bit", 
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"gpuy\", \"gpuy\", \"hs\"]": [
+    "hs", 
+    "bit", 
+    "dev", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"dev\", \"nwz\", \"hs\"]": [
+    "gpuy", 
+    "aflx", 
+    "dev", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"dev\", \"aflx\"]": [
+    "nwz", 
+    "hs", 
+    "bit", 
+    "aflx", 
+    "cjkr", 
+    "moq", 
+    "gpuy", 
+    "dev"
+  ], 
+  "[\"nwz\", \"nwz\", \"gpuy\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"hs\", \"hs\"]": [
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"gpuy\", \"nwz\"]": [
+    "nwz", 
+    "dev", 
+    "hs", 
+    "bit", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq"
+  ], 
+  "[\"nwz\", \"cjkr\", \"bit\"]": [
+    "bit", 
+    "gpuy", 
+    "hs", 
+    "aflx", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"gpuy\", \"aflx\"]": [
+    "bit", 
+    "aflx", 
+    "cjkr", 
+    "gpuy", 
+    "hs", 
+    "moq", 
+    "dev", 
+    "nwz"
+  ], 
+  "[\"moq\", \"gpuy\", \"cjkr\"]": [
+    "hs", 
+    "dev", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "cjkr", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"gpuy\", \"gpuy\", \"cjkr\"]": [
+    "gpuy", 
+    "cjkr", 
+    "hs", 
+    "dev", 
+    "bit", 
+    "moq", 
+    "aflx", 
+    "nwz"
+  ], 
+  "[\"aflx\", \"moq\", \"moq\"]": [
+    "cjkr", 
+    "nwz", 
+    "gpuy", 
+    "dev", 
+    "bit", 
+    "aflx", 
+    "hs", 
+    "moq"
+  ], 
+  "[\"dev\", \"hs\", \"dev\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"moq\", \"nwz\"]": [
+    "gpuy", 
+    "dev", 
+    "bit", 
+    "aflx", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"hs\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"gpuy\", \"bit\"]": [
+    "cjkr", 
+    "hs", 
+    "bit", 
+    "nwz", 
+    "gpuy", 
+    "moq", 
+    "aflx", 
+    "dev"
+  ], 
+  "[\"bit\", \"aflx\", \"moq\"]": [
+    "moq", 
+    "cjkr", 
+    "nwz", 
+    "bit", 
+    "gpuy", 
+    "dev", 
+    "aflx", 
+    "hs"
+  ], 
+  "[\"bit\", \"cjkr\", \"aflx\"]": [
+    "nwz", 
+    "dev", 
+    "bit", 
+    "cjkr", 
+    "moq", 
+    "gpuy", 
+    "aflx", 
+    "hs"
+  ], 
+  "[\"cjkr\", \"aflx\", \"gpuy\"]": [
+    "bit", 
+    "hs", 
+    "aflx", 
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "cjkr", 
+    "nwz"
+  ], 
+  "[\"nwz\", \"moq\", \"cjkr\"]": [
+    "cjkr", 
+    "aflx", 
+    "dev", 
+    "bit", 
+    "moq", 
+    "hs", 
+    "nwz", 
+    "gpuy"
+  ], 
+  "[\"cjkr\", \"cjkr\", \"hs\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"nwz\", \"cjkr\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"cjkr\", \"cjkr\"]": [
+    "gpuy", 
+    "aflx", 
+    "hs", 
+    "bit", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"bit\", \"hs\"]": [
+    "hs", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"gpuy\", \"hs\"]": [
+    "bit", 
+    "hs", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"dev\", \"moq\"]": [
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "nwz", 
+    "moq", 
+    "cjkr", 
+    "dev", 
+    "hs"
+  ], 
+  "[\"dev\", \"hs\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"bit\", \"nwz\"]": [
+    "nwz", 
+    "bit", 
+    "cjkr", 
+    "dev", 
+    "hs", 
+    "aflx", 
+    "gpuy", 
+    "moq"
+  ], 
+  "[\"hs\", \"nwz\", \"dev\"]": [
+    "dev", 
+    "aflx", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"nwz\", \"aflx\", \"moq\"]": [
+    "dev", 
+    "bit", 
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"moq\", \"hs\"]": [
+    "dev", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"dev\", \"hs\"]": [
+    "hs", 
+    "bit", 
+    "dev", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"aflx\", \"dev\", \"nwz\"]": [
+    "gpuy", 
+    "bit", 
+    "dev", 
+    "hs", 
+    "cjkr", 
+    "moq", 
+    "nwz", 
+    "aflx"
+  ], 
+  "[\"gpuy\", \"hs\", \"cjkr\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"nwz\", \"dev\"]": [
+    "dev", 
+    "bit", 
+    "moq", 
+    "gpuy", 
+    "aflx", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"gpuy\", \"cjkr\"]": [
+    "cjkr", 
+    "aflx", 
+    "bit", 
+    "dev", 
+    "gpuy", 
+    "hs", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"nwz\", \"hs\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"bit\", \"aflx\"]": [
+    "dev", 
+    "bit", 
+    "aflx", 
+    "moq", 
+    "cjkr", 
+    "nwz", 
+    "gpuy", 
+    "hs"
+  ], 
+  "[\"gpuy\", \"cjkr\", \"hs\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"bit\", \"aflx\"]": [
+    "bit", 
+    "cjkr", 
+    "nwz", 
+    "gpuy", 
+    "aflx", 
+    "dev", 
+    "moq", 
+    "hs"
+  ], 
+  "[\"dev\", \"nwz\", \"gpuy\"]": [
+    "aflx", 
+    "bit", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"nwz\", \"bit\"]": [
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"nwz\", \"nwz\"]": [
+    "moq", 
+    "gpuy", 
+    "dev", 
+    "bit", 
+    "aflx", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"gpuy\", \"cjkr\"]": [
+    "bit", 
+    "moq", 
+    "aflx", 
+    "dev", 
+    "cjkr", 
+    "hs", 
+    "gpuy", 
+    "nwz"
+  ], 
+  "[\"hs\", \"nwz\", \"bit\"]": [
+    "bit", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "aflx", 
+    "gpuy", 
+    "dev", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"cjkr\", \"gpuy\"]": [
+    "gpuy", 
+    "bit", 
+    "hs", 
+    "dev", 
+    "aflx", 
+    "moq", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"gpuy\", \"moq\"]": [
+    "bit", 
+    "dev", 
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"gpuy\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"hs\", \"hs\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"moq\", \"aflx\"]": [
+    "aflx", 
+    "gpuy", 
+    "bit", 
+    "dev", 
+    "cjkr", 
+    "moq", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"aflx\", \"bit\", \"cjkr\"]": [
+    "dev", 
+    "hs", 
+    "moq", 
+    "gpuy", 
+    "bit", 
+    "aflx", 
+    "cjkr", 
+    "nwz"
+  ], 
+  "[\"gpuy\", \"nwz\", \"gpuy\"]": [
+    "hs", 
+    "gpuy", 
+    "cjkr", 
+    "aflx", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"hs\", \"dev\", \"bit\"]": [
+    "bit", 
+    "hs", 
+    "gpuy", 
+    "dev", 
+    "nwz", 
+    "cjkr", 
+    "aflx", 
+    "moq"
+  ], 
+  "[\"hs\", \"moq\", \"hs\"]": [
+    "gpuy", 
+    "bit", 
+    "aflx", 
+    "dev", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"cjkr\", \"dev\"]": [
+    "hs", 
+    "aflx", 
+    "nwz", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit"
+  ], 
+  "[\"dev\", \"gpuy\", \"dev\"]": [
+    "hs", 
+    "dev", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"cjkr\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"aflx\", \"dev\"]": [
+    "aflx", 
+    "dev", 
+    "nwz", 
+    "bit", 
+    "gpuy", 
+    "moq", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"moq\", \"dev\"]": [
+    "aflx", 
+    "gpuy", 
+    "bit", 
+    "dev", 
+    "hs", 
+    "moq", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"aflx\", \"bit\"]": [
+    "dev", 
+    "gpuy", 
+    "cjkr", 
+    "bit", 
+    "nwz", 
+    "aflx", 
+    "hs", 
+    "moq"
+  ], 
+  "[\"cjkr\", \"cjkr\", \"aflx\"]": [
+    "nwz", 
+    "cjkr", 
+    "hs", 
+    "gpuy", 
+    "aflx", 
+    "dev", 
+    "bit", 
+    "moq"
+  ], 
+  "[\"hs\", \"bit\", \"moq\"]": [
+    "cjkr", 
+    "gpuy", 
+    "bit", 
+    "hs", 
+    "moq", 
+    "nwz", 
+    "aflx", 
+    "dev"
+  ], 
+  "[\"cjkr\", \"moq\", \"hs\"]": [
+    "bit", 
+    "nwz", 
+    "dev", 
+    "moq", 
+    "hs", 
+    "aflx", 
+    "gpuy", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"dev\", \"gpuy\"]": [
+    "aflx", 
+    "bit", 
+    "dev", 
+    "hs", 
+    "cjkr", 
+    "moq", 
+    "gpuy", 
+    "nwz"
+  ], 
+  "[\"bit\", \"bit\", \"gpuy\"]": [
+    "gpuy", 
+    "hs", 
+    "dev", 
+    "aflx", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"cjkr\", \"cjkr\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"cjkr\", \"cjkr\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"dev\", \"aflx\"]": [
+    "dev", 
+    "aflx", 
+    "cjkr", 
+    "gpuy", 
+    "hs", 
+    "bit", 
+    "nwz", 
+    "moq"
+  ], 
+  "[\"gpuy\", \"bit\", \"bit\"]": [
+    "cjkr", 
+    "aflx", 
+    "bit", 
+    "dev", 
+    "moq", 
+    "gpuy", 
+    "hs", 
+    "nwz"
+  ], 
+  "[\"cjkr\", \"hs\", \"hs\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"nwz\", \"hs\"]": [
+    "dev", 
+    "cjkr", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"aflx\", \"gpuy\", \"gpuy\"]": [
+    "cjkr", 
+    "aflx", 
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"gpuy\", \"dev\", \"gpuy\"]": [
+    "bit", 
+    "gpuy", 
+    "hs", 
+    "aflx", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"gpuy\", \"aflx\"]": [
+    "aflx", 
+    "moq", 
+    "gpuy", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"gpuy\", \"hs\"]": [
+    "bit", 
+    "dev", 
+    "aflx", 
+    "hs", 
+    "moq", 
+    "gpuy", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"nwz\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"bit\", \"cjkr\"]": [
+    "dev", 
+    "bit", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "aflx", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"moq\", \"hs\", \"hs\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"nwz\", \"hs\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"gpuy\", \"hs\"]": [
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"gpuy\", \"cjkr\"]": [
+    "bit", 
+    "dev", 
+    "cjkr", 
+    "nwz", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "hs"
+  ], 
+  "[\"nwz\", \"dev\", \"gpuy\"]": [
+    "aflx", 
+    "cjkr", 
+    "moq", 
+    "bit", 
+    "hs", 
+    "dev", 
+    "gpuy", 
+    "nwz"
+  ], 
+  "[\"dev\", \"cjkr\", \"aflx\"]": [
+    "nwz", 
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "bit", 
+    "hs", 
+    "dev", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"hs\", \"gpuy\"]": [
+    "cjkr", 
+    "bit", 
+    "nwz", 
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "dev", 
+    "hs"
+  ], 
+  "[\"bit\", \"moq\", \"gpuy\"]": [
+    "cjkr", 
+    "moq", 
+    "aflx", 
+    "dev", 
+    "gpuy", 
+    "nwz", 
+    "hs", 
+    "bit"
+  ], 
+  "[\"cjkr\", \"hs\", \"cjkr\"]": [
+    "bit", 
+    "moq", 
+    "gpuy", 
+    "aflx", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"hs\", \"bit\"]": [
+    "cjkr", 
+    "aflx", 
+    "bit", 
+    "nwz", 
+    "gpuy", 
+    "hs", 
+    "moq", 
+    "dev"
+  ], 
+  "[\"nwz\", \"moq\", \"dev\"]": [
+    "dev", 
+    "aflx", 
+    "hs", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"aflx\", \"cjkr\"]": [
+    "cjkr", 
+    "dev", 
+    "bit", 
+    "gpuy", 
+    "hs", 
+    "aflx", 
+    "nwz", 
+    "moq"
+  ], 
+  "[\"gpuy\", \"nwz\", \"aflx\"]": [
+    "bit", 
+    "dev", 
+    "moq", 
+    "aflx", 
+    "nwz", 
+    "gpuy", 
+    "cjkr", 
+    "hs"
+  ], 
+  "[\"moq\", \"moq\", \"bit\"]": [
+    "hs", 
+    "bit", 
+    "moq", 
+    "nwz", 
+    "aflx", 
+    "gpuy", 
+    "dev", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"dev\", \"hs\"]": [
+    "gpuy", 
+    "bit", 
+    "dev", 
+    "moq", 
+    "hs", 
+    "cjkr", 
+    "aflx", 
+    "nwz"
+  ], 
+  "[\"gpuy\", \"bit\", \"nwz\"]": [
+    "gpuy", 
+    "cjkr", 
+    "nwz", 
+    "dev", 
+    "moq", 
+    "hs", 
+    "bit", 
+    "aflx"
+  ], 
+  "[\"moq\", \"bit\", \"dev\"]": [
+    "dev", 
+    "bit", 
+    "hs", 
+    "nwz", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"hs\", \"gpuy\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"moq\", \"cjkr\"]": [
+    "cjkr", 
+    "bit", 
+    "dev", 
+    "nwz", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "hs"
+  ], 
+  "[\"aflx\", \"aflx\", \"cjkr\"]": [
+    "bit", 
+    "dev", 
+    "gpuy", 
+    "cjkr", 
+    "moq", 
+    "aflx", 
+    "hs", 
+    "nwz"
+  ], 
+  "[\"dev\", \"dev\", \"nwz\"]": [
+    "bit", 
+    "hs", 
+    "gpuy", 
+    "dev", 
+    "aflx", 
+    "moq", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"bit\", \"cjkr\"]": [
+    "aflx", 
+    "cjkr", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "gpuy", 
+    "moq", 
+    "dev"
+  ], 
+  "[\"dev\", \"bit\", \"gpuy\"]": [
+    "hs", 
+    "bit", 
+    "aflx", 
+    "dev", 
+    "nwz", 
+    "moq", 
+    "gpuy", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"dev\", \"nwz\"]": [
+    "dev", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "aflx", 
+    "gpuy", 
+    "cjkr", 
+    "hs"
+  ], 
+  "[\"cjkr\", \"hs\", \"dev\"]": [
+    "cjkr", 
+    "moq", 
+    "aflx", 
+    "dev", 
+    "hs", 
+    "nwz", 
+    "bit", 
+    "gpuy"
+  ], 
+  "[\"nwz\", \"aflx\", \"aflx\"]": [
+    "cjkr", 
+    "aflx", 
+    "bit", 
+    "hs", 
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"cjkr\", \"bit\", \"cjkr\"]": [
+    "cjkr", 
+    "hs", 
+    "dev", 
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"moq\", \"bit\", \"moq\"]": [
+    "hs", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"aflx\", \"moq\"]": [
+    "dev", 
+    "gpuy", 
+    "nwz", 
+    "bit", 
+    "aflx", 
+    "moq", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"gpuy\", \"dev\"]": [
+    "nwz", 
+    "bit", 
+    "hs", 
+    "aflx", 
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"dev\", \"aflx\"]": [
+    "aflx", 
+    "dev", 
+    "cjkr", 
+    "hs", 
+    "bit", 
+    "gpuy", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"bit\", \"bit\", \"nwz\"]": [
+    "dev", 
+    "gpuy", 
+    "aflx", 
+    "hs", 
+    "nwz", 
+    "moq", 
+    "bit", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"dev\", \"dev\"]": [
+    "dev", 
+    "bit", 
+    "aflx", 
+    "cjkr", 
+    "moq", 
+    "hs", 
+    "nwz", 
+    "gpuy"
+  ], 
+  "[\"gpuy\", \"aflx\", \"bit\"]": [
+    "bit", 
+    "nwz", 
+    "cjkr", 
+    "hs", 
+    "dev", 
+    "aflx", 
+    "moq", 
+    "gpuy"
+  ], 
+  "[\"gpuy\", \"moq\", \"aflx\"]": [
+    "bit", 
+    "aflx", 
+    "dev", 
+    "gpuy", 
+    "cjkr", 
+    "moq", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"cjkr\", \"nwz\", \"cjkr\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"cjkr\", \"cjkr\"]": [
+    "dev", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"cjkr\", \"nwz\"]": [
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"cjkr\", \"bit\"]": [
+    "dev", 
+    "nwz", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "hs"
+  ], 
+  "[\"nwz\", \"hs\", \"cjkr\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"aflx\", \"hs\"]": [
+    "bit", 
+    "dev", 
+    "gpuy", 
+    "cjkr", 
+    "aflx", 
+    "hs", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"aflx\", \"cjkr\", \"aflx\"]": [
+    "nwz", 
+    "gpuy", 
+    "bit", 
+    "moq", 
+    "dev", 
+    "cjkr", 
+    "aflx", 
+    "hs"
+  ], 
+  "[\"hs\", \"nwz\", \"aflx\"]": [
+    "cjkr", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"cjkr\", \"gpuy\", \"moq\"]": [
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "hs", 
+    "aflx", 
+    "dev", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"gpuy\", \"moq\"]": [
+    "gpuy", 
+    "aflx", 
+    "nwz", 
+    "cjkr", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "hs"
+  ], 
+  "[\"gpuy\", \"moq\", \"bit\"]": [
+    "nwz", 
+    "dev", 
+    "bit", 
+    "hs", 
+    "aflx", 
+    "cjkr", 
+    "gpuy", 
+    "moq"
+  ], 
+  "[\"cjkr\", \"bit\", \"hs\"]": [
+    "cjkr", 
+    "dev", 
+    "hs", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"cjkr\", \"moq\", \"bit\"]": [
+    "nwz", 
+    "dev", 
+    "hs", 
+    "bit", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"dev\", \"moq\"]": [
+    "gpuy", 
+    "aflx", 
+    "dev", 
+    "moq", 
+    "bit", 
+    "hs", 
+    "cjkr", 
+    "nwz"
+  ], 
+  "[\"moq\", \"nwz\", \"nwz\"]": [
+    "dev", 
+    "hs", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"cjkr\", \"hs\"]": [
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"hs\", \"nwz\"]": [
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"hs\", \"aflx\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"moq\", \"dev\"]": [
+    "cjkr", 
+    "dev", 
+    "nwz", 
+    "bit", 
+    "gpuy", 
+    "hs", 
+    "aflx", 
+    "moq"
+  ], 
+  "[\"moq\", \"aflx\", \"bit\"]": [
+    "dev", 
+    "nwz", 
+    "bit", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "hs", 
+    "moq"
+  ], 
+  "[\"dev\", \"moq\", \"nwz\"]": [
+    "nwz", 
+    "dev", 
+    "aflx", 
+    "moq", 
+    "cjkr", 
+    "hs", 
+    "gpuy", 
+    "bit"
+  ], 
+  "[\"aflx\", \"cjkr\", \"dev\"]": [
+    "aflx", 
+    "dev", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "bit", 
+    "gpuy", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"aflx\", \"hs\"]": [
+    "dev", 
+    "bit", 
+    "hs", 
+    "gpuy", 
+    "moq", 
+    "cjkr", 
+    "aflx", 
+    "nwz"
+  ], 
+  "[\"bit\", \"cjkr\", \"cjkr\"]": [
+    "dev", 
+    "aflx", 
+    "bit", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"bit\", \"gpuy\"]": [
+    "hs", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"bit\", \"moq\", \"hs\"]": [
+    "bit", 
+    "hs", 
+    "nwz", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"hs\", \"aflx\"]": [
+    "cjkr", 
+    "gpuy", 
+    "aflx", 
+    "nwz", 
+    "dev", 
+    "moq", 
+    "hs", 
+    "bit"
+  ], 
+  "[\"dev\", \"cjkr\", \"moq\"]": [
+    "nwz", 
+    "gpuy", 
+    "hs", 
+    "dev", 
+    "bit", 
+    "aflx", 
+    "moq", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"nwz\", \"cjkr\"]": [
+    "bit", 
+    "dev", 
+    "nwz", 
+    "aflx", 
+    "hs", 
+    "gpuy", 
+    "moq", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"bit\", \"nwz\"]": [
+    "dev", 
+    "gpuy", 
+    "bit", 
+    "moq", 
+    "nwz", 
+    "aflx", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"cjkr\", \"aflx\"]": [
+    "gpuy", 
+    "aflx", 
+    "bit", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"dev\", \"dev\"]": [
+    "moq", 
+    "dev", 
+    "nwz", 
+    "cjkr", 
+    "bit", 
+    "hs", 
+    "aflx", 
+    "gpuy"
+  ], 
+  "[\"gpuy\", \"nwz\", \"moq\"]": [
+    "aflx", 
+    "moq", 
+    "gpuy", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"moq\", \"nwz\"]": [
+    "dev", 
+    "bit", 
+    "cjkr", 
+    "moq", 
+    "gpuy", 
+    "aflx", 
+    "hs", 
+    "nwz"
+  ], 
+  "[\"dev\", \"nwz\", \"nwz\"]": [
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"gpuy\", \"dev\"]": [
+    "hs", 
+    "nwz", 
+    "cjkr", 
+    "dev", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq"
+  ], 
+  "[\"hs\", \"gpuy\", \"gpuy\"]": [
+    "gpuy", 
+    "dev", 
+    "moq", 
+    "cjkr", 
+    "aflx", 
+    "hs", 
+    "nwz", 
+    "bit"
+  ], 
+  "[\"hs\", \"moq\", \"gpuy\"]": [
+    "hs", 
+    "cjkr", 
+    "bit", 
+    "dev", 
+    "nwz", 
+    "aflx", 
+    "gpuy", 
+    "moq"
+  ], 
+  "[\"cjkr\", \"cjkr\", \"bit\"]": [
+    "bit", 
+    "moq", 
+    "hs", 
+    "dev", 
+    "gpuy", 
+    "aflx", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"cjkr\", \"dev\"]": [
+    "nwz", 
+    "gpuy", 
+    "aflx", 
+    "bit", 
+    "moq", 
+    "dev", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"bit\", \"gpuy\"]": [
+    "hs", 
+    "aflx", 
+    "moq", 
+    "gpuy", 
+    "bit", 
+    "dev", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"gpuy\", \"nwz\"]": [
+    "aflx", 
+    "nwz", 
+    "dev", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "hs"
+  ], 
+  "[\"gpuy\", \"dev\", \"hs\"]": [
+    "bit", 
+    "hs", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"moq\", \"moq\"]": [
+    "aflx", 
+    "bit", 
+    "cjkr", 
+    "dev", 
+    "moq", 
+    "gpuy", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"nwz\", \"nwz\", \"aflx\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"dev\", \"hs\"]": [
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"hs\", \"bit\"]": [
+    "bit", 
+    "aflx", 
+    "cjkr", 
+    "dev", 
+    "hs", 
+    "gpuy", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"nwz\", \"gpuy\", \"dev\"]": [
+    "bit", 
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"aflx\", \"dev\"]": [
+    "dev", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "nwz", 
+    "moq", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"hs\", \"bit\"]": [
+    "dev", 
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"cjkr\", \"dev\"]": [
+    "hs", 
+    "dev", 
+    "aflx", 
+    "bit", 
+    "gpuy", 
+    "cjkr", 
+    "nwz", 
+    "moq"
+  ], 
+  "[\"dev\", \"gpuy\", \"moq\"]": [
+    "bit", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"moq\", \"gpuy\"]": [
+    "aflx", 
+    "cjkr", 
+    "nwz", 
+    "gpuy", 
+    "bit", 
+    "dev", 
+    "hs", 
+    "moq"
+  ], 
+  "[\"gpuy\", \"cjkr\", \"aflx\"]": [
+    "nwz", 
+    "cjkr", 
+    "dev", 
+    "gpuy", 
+    "bit", 
+    "hs", 
+    "moq", 
+    "aflx"
+  ], 
+  "[\"bit\", \"hs\", \"gpuy\"]": [
+    "hs", 
+    "cjkr", 
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "dev", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"moq\", \"dev\", \"bit\"]": [
+    "hs", 
+    "aflx", 
+    "cjkr", 
+    "dev", 
+    "moq", 
+    "gpuy", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"moq\", \"aflx\", \"nwz\"]": [
+    "gpuy", 
+    "aflx", 
+    "nwz", 
+    "hs", 
+    "dev", 
+    "bit", 
+    "cjkr", 
+    "moq"
+  ], 
+  "[\"moq\", \"dev\", \"cjkr\"]": [
+    "hs", 
+    "cjkr", 
+    "dev", 
+    "gpuy", 
+    "bit", 
+    "moq", 
+    "aflx", 
+    "nwz"
+  ], 
+  "[\"aflx\", \"gpuy\", \"bit\"]": [
+    "hs", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "bit", 
+    "dev", 
+    "cjkr", 
+    "aflx"
+  ], 
+  "[\"bit\", \"moq\", \"aflx\"]": [
+    "dev", 
+    "gpuy", 
+    "cjkr", 
+    "bit", 
+    "hs", 
+    "aflx", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"dev\", \"hs\", \"moq\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"moq\", \"dev\"]": [
+    "dev", 
+    "hs", 
+    "bit", 
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"hs\", \"aflx\"]": [
+    "moq", 
+    "bit", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "dev", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"gpuy\", \"bit\", \"dev\"]": [
+    "dev", 
+    "cjkr", 
+    "bit", 
+    "aflx", 
+    "nwz", 
+    "moq", 
+    "gpuy", 
+    "hs"
+  ], 
+  "[\"aflx\", \"aflx\", \"bit\"]": [
+    "dev", 
+    "hs", 
+    "aflx", 
+    "bit", 
+    "gpuy", 
+    "cjkr", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"bit\", \"hs\", \"moq\"]": [
+    "gpuy", 
+    "hs", 
+    "aflx", 
+    "moq", 
+    "cjkr", 
+    "bit", 
+    "dev", 
+    "nwz"
+  ], 
+  "[\"moq\", \"hs\", \"dev\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"bit\", \"bit\"]": [
+    "aflx", 
+    "dev", 
+    "bit", 
+    "cjkr", 
+    "hs", 
+    "nwz", 
+    "gpuy", 
+    "moq"
+  ], 
+  "[\"gpuy\", \"aflx\", \"moq\"]": [
+    "dev", 
+    "bit", 
+    "cjkr", 
+    "moq", 
+    "hs", 
+    "nwz", 
+    "aflx", 
+    "gpuy"
+  ], 
+  "[\"hs\", \"cjkr\", \"aflx\"]": [
+    "nwz", 
+    "cjkr", 
+    "aflx", 
+    "bit", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "hs"
+  ], 
+  "[\"cjkr\", \"nwz\", \"aflx\"]": [
+    "hs", 
+    "bit", 
+    "nwz", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"dev\", \"bit\"]": [
+    "gpuy", 
+    "nwz", 
+    "bit", 
+    "cjkr", 
+    "hs", 
+    "aflx", 
+    "dev", 
+    "moq"
+  ], 
+  "[\"bit\", \"hs\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"cjkr\", \"moq\"]": [
+    "bit", 
+    "gpuy", 
+    "dev", 
+    "cjkr", 
+    "aflx", 
+    "nwz", 
+    "moq", 
+    "hs"
+  ], 
+  "[\"bit\", \"dev\", \"cjkr\"]": [
+    "aflx", 
+    "moq", 
+    "hs", 
+    "cjkr", 
+    "gpuy", 
+    "nwz", 
+    "bit", 
+    "dev"
+  ], 
+  "[\"cjkr\", \"gpuy\", \"bit\"]": [
+    "moq", 
+    "hs", 
+    "bit", 
+    "dev", 
+    "nwz", 
+    "aflx", 
+    "cjkr", 
+    "gpuy"
+  ], 
+  "[\"aflx\", \"nwz\", \"gpuy\"]": [
+    "dev", 
+    "bit", 
+    "moq", 
+    "nwz", 
+    "aflx", 
+    "cjkr", 
+    "hs", 
+    "gpuy"
+  ], 
+  "[\"moq\", \"moq\", \"aflx\"]": [
+    "dev", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"aflx\", \"moq\", \"gpuy\"]": [
+    "nwz", 
+    "aflx", 
+    "bit", 
+    "cjkr", 
+    "dev", 
+    "hs", 
+    "gpuy", 
+    "moq"
+  ], 
+  "[\"bit\", \"bit\", \"moq\"]": [
+    "dev", 
+    "aflx", 
+    "bit", 
+    "gpuy", 
+    "hs", 
+    "moq", 
+    "cjkr", 
+    "nwz"
+  ], 
+  "[\"moq\", \"moq\", \"dev\"]": [
+    "dev", 
+    "bit", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"bit\", \"nwz\"]": [
+    "dev", 
+    "gpuy", 
+    "aflx", 
+    "hs", 
+    "cjkr", 
+    "moq", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"dev\", \"bit\", \"dev\"]": [
+    "dev", 
+    "nwz", 
+    "bit", 
+    "moq", 
+    "gpuy", 
+    "hs", 
+    "cjkr", 
+    "aflx"
+  ], 
+  "[\"bit\", \"nwz\", \"aflx\"]": [
+    "moq", 
+    "aflx", 
+    "dev", 
+    "cjkr", 
+    "bit", 
+    "gpuy", 
+    "hs", 
+    "nwz"
+  ], 
+  "[\"moq\", \"dev\", \"dev\"]": [
+    "cjkr", 
+    "bit", 
+    "hs", 
+    "aflx", 
+    "nwz", 
+    "gpuy", 
+    "moq", 
+    "dev"
+  ], 
+  "[\"nwz\", \"hs\", \"aflx\"]": [
+    "bit", 
+    "aflx", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"aflx\", \"moq\", \"bit\"]": [
+    "bit", 
+    "nwz", 
+    "hs", 
+    "dev", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq"
+  ], 
+  "[\"moq\", \"cjkr\", \"gpuy\"]": [
+    "aflx", 
+    "nwz", 
+    "cjkr", 
+    "moq", 
+    "gpuy", 
+    "dev", 
+    "bit", 
+    "hs"
+  ], 
+  "[\"moq\", \"gpuy\", \"gpuy\"]": [
+    "moq", 
+    "hs", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "dev", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"hs\", \"nwz\", \"cjkr\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"gpuy\", \"dev\"]": [
+    "hs", 
+    "aflx", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"aflx\", \"bit\", \"bit\"]": [
+    "bit", 
+    "dev", 
+    "aflx", 
+    "cjkr", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "gpuy"
+  ], 
+  "[\"dev\", \"aflx\", \"cjkr\"]": [
+    "hs", 
+    "bit", 
+    "aflx", 
+    "dev", 
+    "cjkr", 
+    "nwz", 
+    "gpuy", 
+    "moq"
+  ], 
+  "[\"cjkr\", \"moq\", \"moq\"]": [
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "aflx", 
+    "cjkr", 
+    "hs", 
+    "nwz"
+  ], 
+  "[\"hs\", \"aflx\", \"nwz\"]": [
+    "dev", 
+    "gpuy", 
+    "bit", 
+    "cjkr", 
+    "aflx", 
+    "moq", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"gpuy\", \"moq\", \"gpuy\"]": [
+    "cjkr", 
+    "gpuy", 
+    "nwz", 
+    "bit", 
+    "dev", 
+    "hs", 
+    "aflx", 
+    "moq"
+  ], 
+  "[\"nwz\", \"bit\", \"bit\"]": [
+    "hs", 
+    "nwz", 
+    "cjkr", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev"
+  ], 
+  "[\"cjkr\", \"moq\", \"cjkr\"]": [
+    "cjkr", 
+    "dev", 
+    "gpuy", 
+    "nwz", 
+    "bit", 
+    "moq", 
+    "aflx", 
+    "hs"
+  ], 
+  "[\"hs\", \"nwz\", \"hs\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"aflx\", \"moq\"]": [
+    "bit", 
+    "nwz", 
+    "moq", 
+    "cjkr", 
+    "dev", 
+    "gpuy", 
+    "aflx", 
+    "hs"
+  ], 
+  "[\"hs\", \"nwz\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"aflx\", \"dev\"]": [
+    "aflx", 
+    "bit", 
+    "dev", 
+    "moq", 
+    "cjkr", 
+    "hs", 
+    "gpuy", 
+    "nwz"
+  ], 
+  "[\"aflx\", \"bit\", \"gpuy\"]": [
+    "gpuy", 
+    "hs", 
+    "aflx", 
+    "nwz", 
+    "bit", 
+    "moq", 
+    "dev", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"hs\", \"dev\"]": [
+    "dev", 
+    "aflx", 
+    "nwz", 
+    "cjkr", 
+    "hs", 
+    "gpuy", 
+    "bit", 
+    "moq"
+  ], 
+  "[\"cjkr\", \"hs\", \"bit\"]": [
+    "aflx", 
+    "nwz", 
+    "dev", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "hs"
+  ], 
+  "[\"dev\", \"nwz\", \"moq\"]": [
+    "gpuy", 
+    "cjkr", 
+    "aflx", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"gpuy\", \"dev\", \"bit\"]": [
+    "bit", 
+    "hs", 
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"moq\", \"dev\"]": [
+    "hs", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "aflx", 
+    "dev", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"nwz\", \"moq\", \"aflx\"]": [
+    "aflx", 
+    "hs", 
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"gpuy\", \"moq\"]": [
+    "nwz", 
+    "gpuy", 
+    "moq", 
+    "aflx", 
+    "dev", 
+    "bit", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"dev\", \"cjkr\"]": [
+    "dev", 
+    "moq", 
+    "bit", 
+    "gpuy", 
+    "cjkr", 
+    "aflx", 
+    "hs", 
+    "nwz"
+  ], 
+  "[\"aflx\", \"aflx\", \"aflx\"]": [
+    "moq", 
+    "dev", 
+    "aflx", 
+    "bit", 
+    "gpuy", 
+    "hs", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"nwz\", \"moq\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"aflx\", \"gpuy\"]": [
+    "dev", 
+    "hs", 
+    "aflx", 
+    "moq", 
+    "bit", 
+    "cjkr", 
+    "gpuy", 
+    "nwz"
+  ], 
+  "[\"cjkr\", \"aflx\", \"moq\"]": [
+    "dev", 
+    "hs", 
+    "gpuy", 
+    "nwz", 
+    "bit", 
+    "cjkr", 
+    "aflx", 
+    "moq"
+  ], 
+  "[\"cjkr\", \"cjkr\", \"moq\"]": [
+    "hs", 
+    "nwz", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"aflx\", \"bit\"]": [
+    "aflx", 
+    "dev", 
+    "cjkr", 
+    "hs", 
+    "bit", 
+    "moq", 
+    "nwz", 
+    "gpuy"
+  ], 
+  "[\"nwz\", \"gpuy\", \"bit\"]": [
+    "bit", 
+    "cjkr", 
+    "hs", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz"
+  ], 
+  "[\"hs\", \"dev\", \"nwz\"]": [
+    "hs", 
+    "bit", 
+    "aflx", 
+    "dev", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"aflx\", \"moq\", \"cjkr\"]": [
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "cjkr", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"dev\", \"hs\", \"gpuy\"]": [
+    "dev", 
+    "nwz", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"moq\", \"cjkr\"]": [
+    "dev", 
+    "nwz", 
+    "bit", 
+    "cjkr", 
+    "moq", 
+    "gpuy", 
+    "aflx", 
+    "hs"
+  ], 
+  "[\"cjkr\", \"hs\", \"aflx\"]": [
+    "nwz", 
+    "cjkr", 
+    "bit", 
+    "aflx", 
+    "moq", 
+    "gpuy", 
+    "hs", 
+    "dev"
+  ], 
+  "[\"nwz\", \"dev\", \"nwz\"]": [
+    "hs", 
+    "bit", 
+    "aflx", 
+    "dev", 
+    "moq", 
+    "gpuy", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"bit\", \"hs\"]": [
+    "bit", 
+    "hs", 
+    "moq", 
+    "dev", 
+    "aflx", 
+    "cjkr", 
+    "gpuy", 
+    "nwz"
+  ], 
+  "[\"hs\", \"aflx\", \"gpuy\"]": [
+    "gpuy", 
+    "hs", 
+    "bit", 
+    "dev", 
+    "aflx", 
+    "cjkr", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"moq\", \"moq\", \"moq\"]": [
+    "dev", 
+    "cjkr", 
+    "nwz", 
+    "hs", 
+    "aflx", 
+    "moq", 
+    "gpuy", 
+    "bit"
+  ], 
+  "[\"bit\", \"hs\", \"hs\"]": [
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"cjkr\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"bit\", \"dev\"]": [
+    "dev", 
+    "bit", 
+    "aflx", 
+    "hs", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"gpuy\", \"moq\", \"moq\"]": [
+    "dev", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "bit", 
+    "hs", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"dev\", \"dev\", \"aflx\"]": [
+    "bit", 
+    "aflx", 
+    "dev", 
+    "cjkr", 
+    "nwz", 
+    "moq", 
+    "hs", 
+    "gpuy"
+  ], 
+  "[\"moq\", \"nwz\", \"gpuy\"]": [
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"hs\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"hs\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"gpuy\", \"cjkr\"]": [
+    "nwz", 
+    "cjkr", 
+    "dev", 
+    "bit", 
+    "hs", 
+    "moq", 
+    "gpuy", 
+    "aflx"
+  ], 
+  "[\"nwz\", \"moq\", \"gpuy\"]": [
+    "aflx", 
+    "nwz", 
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"nwz\", \"cjkr\"]": [
+    "aflx", 
+    "cjkr", 
+    "moq", 
+    "gpuy", 
+    "bit", 
+    "dev", 
+    "hs", 
+    "nwz"
+  ], 
+  "[\"hs\", \"bit\", \"nwz\"]": [
+    "cjkr", 
+    "gpuy", 
+    "dev", 
+    "bit", 
+    "aflx", 
+    "hs", 
+    "nwz", 
+    "moq"
+  ], 
+  "[\"gpuy\", \"hs\", \"hs\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"nwz\", \"bit\"]": [
+    "aflx", 
+    "bit", 
+    "gpuy", 
+    "dev", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"cjkr\", \"bit\"]": [
+    "dev", 
+    "aflx", 
+    "nwz", 
+    "gpuy", 
+    "cjkr", 
+    "moq", 
+    "bit", 
+    "hs"
+  ], 
+  "[\"nwz\", \"moq\", \"nwz\"]": [
+    "dev", 
+    "hs", 
+    "aflx", 
+    "gpuy", 
+    "cjkr", 
+    "moq", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"cjkr\", \"gpuy\", \"aflx\"]": [
+    "bit", 
+    "dev", 
+    "gpuy", 
+    "nwz", 
+    "aflx", 
+    "moq", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"cjkr\", \"hs\"]": [
+    "bit", 
+    "dev", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"bit\", \"gpuy\", \"hs\"]": [
+    "bit", 
+    "hs", 
+    "gpuy", 
+    "dev", 
+    "moq", 
+    "aflx", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"cjkr\", \"dev\"]": [
+    "aflx", 
+    "dev", 
+    "nwz", 
+    "bit", 
+    "gpuy", 
+    "moq", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"cjkr\", \"hs\"]": [
+    "moq", 
+    "dev", 
+    "nwz", 
+    "gpuy", 
+    "bit", 
+    "aflx", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"moq\", \"hs\"]": [
+    "bit", 
+    "hs", 
+    "dev", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"gpuy\", \"dev\"]": [
+    "gpuy", 
+    "hs", 
+    "dev", 
+    "aflx", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"dev\", \"aflx\"]": [
+    "moq", 
+    "aflx", 
+    "bit", 
+    "cjkr", 
+    "dev", 
+    "gpuy", 
+    "hs", 
+    "nwz"
+  ], 
+  "[\"cjkr\", \"hs\", \"moq\"]": [
+    "bit", 
+    "hs", 
+    "moq", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "dev", 
+    "nwz"
+  ], 
+  "[\"aflx\", \"hs\", \"moq\"]": [
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"aflx\", \"cjkr\"]": [
+    "nwz", 
+    "cjkr", 
+    "moq", 
+    "dev", 
+    "hs", 
+    "aflx", 
+    "bit", 
+    "gpuy"
+  ], 
+  "[\"bit\", \"hs\", \"dev\"]": [
+    "gpuy", 
+    "cjkr", 
+    "bit", 
+    "moq", 
+    "hs", 
+    "nwz", 
+    "aflx", 
+    "dev"
+  ], 
+  "[\"bit\", \"aflx\", \"aflx\"]": [
+    "cjkr", 
+    "dev", 
+    "aflx", 
+    "bit", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"aflx\", \"cjkr\", \"moq\"]": [
+    "moq", 
+    "gpuy", 
+    "nwz", 
+    "hs", 
+    "dev", 
+    "bit", 
+    "aflx", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"nwz\", \"dev\"]": [
+    "nwz", 
+    "dev", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "bit", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"cjkr\", \"gpuy\"]": [
+    "hs", 
+    "bit", 
+    "cjkr", 
+    "dev", 
+    "gpuy", 
+    "nwz", 
+    "moq", 
+    "aflx"
+  ], 
+  "[\"bit\", \"gpuy\", \"nwz\"]": [
+    "moq", 
+    "cjkr", 
+    "dev", 
+    "nwz", 
+    "aflx", 
+    "gpuy", 
+    "bit", 
+    "hs"
+  ], 
+  "[\"aflx\", \"dev\", \"bit\"]": [
+    "bit", 
+    "aflx", 
+    "cjkr", 
+    "hs", 
+    "gpuy", 
+    "dev", 
+    "nwz", 
+    "moq"
+  ], 
+  "[\"nwz\", \"cjkr\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"dev\", \"hs\"]": [
+    "hs", 
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"dev\", \"cjkr\"]": [
+    "dev", 
+    "cjkr", 
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "bit", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"dev\", \"nwz\", \"dev\"]": [
+    "bit", 
+    "cjkr", 
+    "moq", 
+    "dev", 
+    "hs", 
+    "gpuy", 
+    "aflx", 
+    "nwz"
+  ], 
+  "[\"aflx\", \"nwz\", \"aflx\"]": [
+    "aflx", 
+    "gpuy", 
+    "cjkr", 
+    "bit", 
+    "hs", 
+    "moq", 
+    "dev", 
+    "nwz"
+  ], 
+  "[\"gpuy\", \"nwz\", \"nwz\"]": [
+    "dev", 
+    "aflx", 
+    "bit", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"aflx\", \"hs\", \"hs\"]": [
+    "moq", 
+    "dev", 
+    "gpuy", 
+    "bit", 
+    "aflx", 
+    "cjkr", 
+    "hs", 
+    "nwz"
+  ], 
+  "[\"nwz\", \"gpuy\", \"cjkr\"]": [
+    "aflx", 
+    "hs", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"cjkr\", \"gpuy\"]": [
+    "gpuy", 
+    "nwz", 
+    "dev", 
+    "moq", 
+    "hs", 
+    "aflx", 
+    "bit", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"nwz\", \"bit\"]": [
+    "bit", 
+    "dev", 
+    "cjkr", 
+    "hs", 
+    "gpuy", 
+    "aflx", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"moq\", \"gpuy\", \"hs\"]": [
+    "bit", 
+    "dev", 
+    "cjkr", 
+    "aflx", 
+    "hs", 
+    "gpuy", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"hs\", \"dev\", \"moq\"]": [
+    "gpuy", 
+    "bit", 
+    "dev", 
+    "aflx", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"aflx\", \"aflx\"]": [
+    "moq", 
+    "dev", 
+    "gpuy", 
+    "bit", 
+    "cjkr", 
+    "aflx", 
+    "hs", 
+    "nwz"
+  ], 
+  "[\"hs\", \"moq\", \"dev\"]": [
+    "bit", 
+    "aflx", 
+    "dev", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"gpuy\", \"aflx\"]": [
+    "aflx", 
+    "bit", 
+    "nwz", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "hs"
+  ], 
+  "[\"aflx\", \"bit\", \"nwz\"]": [
+    "dev", 
+    "aflx", 
+    "cjkr", 
+    "bit", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"gpuy\", \"gpuy\", \"aflx\"]": [
+    "aflx", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "hs", 
+    "nwz"
+  ], 
+  "[\"moq\", \"aflx\", \"gpuy\"]": [
+    "bit", 
+    "aflx", 
+    "moq", 
+    "nwz", 
+    "gpuy", 
+    "cjkr", 
+    "hs", 
+    "dev"
+  ], 
+  "[\"nwz\", \"gpuy\", \"gpuy\"]": [
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"nwz\", \"dev\", \"dev\"]": [
+    "dev", 
+    "cjkr", 
+    "nwz", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "hs"
+  ], 
+  "[\"nwz\", \"bit\", \"aflx\"]": [
+    "aflx", 
+    "dev", 
+    "moq", 
+    "hs", 
+    "cjkr", 
+    "gpuy", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"cjkr\", \"bit\", \"bit\"]": [
+    "gpuy", 
+    "bit", 
+    "cjkr", 
+    "dev", 
+    "aflx", 
+    "hs", 
+    "moq", 
+    "nwz"
+  ], 
+  "[\"moq\", \"moq\", \"hs\"]": [
+    "bit", 
+    "moq", 
+    "aflx", 
+    "cjkr", 
+    "dev", 
+    "gpuy", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"gpuy\", \"bit\", \"aflx\"]": [
+    "bit", 
+    "nwz", 
+    "dev", 
+    "moq", 
+    "aflx", 
+    "hs", 
+    "gpuy", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"bit\", \"cjkr\"]": [
+    "dev", 
+    "bit", 
+    "gpuy", 
+    "aflx", 
+    "cjkr", 
+    "moq", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"gpuy\", \"hs\", \"moq\"]": [
+    "nwz", 
+    "bit", 
+    "hs", 
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"moq\", \"gpuy\"]": [
+    "nwz", 
+    "hs", 
+    "bit", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev"
+  ], 
+  "[\"dev\", \"bit\", \"moq\"]": [
+    "aflx", 
+    "dev", 
+    "bit", 
+    "cjkr", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"moq\", \"nwz\", \"bit\"]": [
+    "moq", 
+    "aflx", 
+    "nwz", 
+    "gpuy", 
+    "dev", 
+    "bit", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"gpuy\", \"aflx\"]": [
+    "aflx", 
+    "nwz", 
+    "cjkr", 
+    "gpuy", 
+    "bit", 
+    "moq", 
+    "dev", 
+    "hs"
+  ], 
+  "[\"dev\", \"nwz\", \"aflx\"]": [
+    "moq", 
+    "bit", 
+    "hs", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "dev", 
+    "nwz"
+  ], 
+  "[\"gpuy\", \"hs\", \"aflx\"]": [
+    "hs", 
+    "bit", 
+    "gpuy", 
+    "cjkr", 
+    "nwz", 
+    "moq", 
+    "aflx", 
+    "dev"
+  ], 
+  "[\"hs\", \"dev\", \"gpuy\"]": [
+    "aflx", 
+    "bit", 
+    "moq", 
+    "hs", 
+    "cjkr", 
+    "dev", 
+    "gpuy", 
+    "nwz"
+  ], 
+  "[\"bit\", \"dev\", \"bit\"]": [
+    "nwz", 
+    "bit", 
+    "hs", 
+    "cjkr", 
+    "aflx", 
+    "moq", 
+    "gpuy", 
+    "dev"
+  ], 
+  "[\"gpuy\", \"hs\", \"nwz\"]": [
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"cjkr\", \"moq\", \"dev\"]": [
+    "dev", 
+    "aflx", 
+    "bit", 
+    "moq", 
+    "cjkr", 
+    "gpuy", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"nwz\", \"bit\", \"hs\"]": [
+    "hs", 
+    "dev", 
+    "cjkr", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"bit\", \"cjkr\", \"dev\"]": [
+    "aflx", 
+    "dev", 
+    "nwz", 
+    "moq", 
+    "cjkr", 
+    "bit", 
+    "gpuy", 
+    "hs"
+  ], 
+  "[\"dev\", \"bit\", \"aflx\"]": [
+    "aflx", 
+    "gpuy", 
+    "bit", 
+    "moq", 
+    "nwz", 
+    "cjkr", 
+    "dev", 
+    "hs"
+  ], 
+  "[\"nwz\", \"bit\", \"cjkr\"]": [
+    "dev", 
+    "cjkr", 
+    "hs", 
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "bit", 
+    "nwz"
+  ], 
+  "[\"dev\", \"cjkr\", \"nwz\"]": [
+    "dev", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"moq\", \"gpuy\", \"bit\"]": [
+    "bit", 
+    "aflx", 
+    "cjkr", 
+    "hs", 
+    "nwz", 
+    "dev", 
+    "gpuy", 
+    "moq"
+  ], 
+  "[\"aflx\", \"hs\", \"gpuy\"]": [
+    "dev", 
+    "bit", 
+    "aflx", 
+    "gpuy", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"hs\", \"aflx\", \"hs\"]": [
+    "aflx", 
+    "bit", 
+    "hs", 
+    "gpuy", 
+    "moq", 
+    "dev", 
+    "nwz", 
+    "cjkr"
+  ], 
+  "[\"bit\", \"nwz\", \"hs\"]": [
+    "bit", 
+    "gpuy", 
+    "dev", 
+    "aflx", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"gpuy\", \"nwz\", \"hs\"]": [
+    "gpuy", 
+    "aflx", 
+    "bit", 
+    "dev", 
+    "moq", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ], 
+  "[\"dev\", \"bit\", \"bit\"]": [
+    "hs", 
+    "cjkr", 
+    "aflx", 
+    "dev", 
+    "moq", 
+    "bit", 
+    "gpuy", 
+    "nwz"
+  ], 
+  "[\"moq\", \"dev\", \"moq\"]": [
+    "bit", 
+    "moq", 
+    "gpuy", 
+    "cjkr", 
+    "aflx", 
+    "dev", 
+    "nwz", 
+    "hs"
+  ], 
+  "[\"bit\", \"cjkr\", \"gpuy\"]": [
+    "bit", 
+    "dev", 
+    "hs", 
+    "cjkr", 
+    "aflx", 
+    "nwz", 
+    "gpuy", 
+    "moq"
+  ], 
+  "[\"moq\", \"aflx\", \"moq\"]": [
+    "moq", 
+    "aflx", 
+    "gpuy", 
+    "dev", 
+    "bit", 
+    "nwz", 
+    "hs", 
+    "cjkr"
+  ]
+}

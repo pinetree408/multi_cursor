@@ -66,8 +66,10 @@ def request(message):
         for item in message['data'].split(' '):
             input_data.append(str(item))
     letter_result = LanguageModelMulti.getStaticMultiAlphasFromPrefix(input_data)
-    word_result = get_word_list(input_data)
-    #word_result = LanguageModelMulti.getWordsFromMultiAlphaPrefix(input_data)
+    if len(input_data) != 0:
+        word_result = get_word_list(input_data)
+    else:
+        word_result = LanguageModelMulti.getWordsFromMultiAlphaPrefix(input_data)
     data = {
             'letter': ', '.join(letter_result),
             'word': ', '.join(word_result[:5])
