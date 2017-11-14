@@ -5,6 +5,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.6/socket.io.js"></script>
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+    <script src="{{ url_for('static', filename='jquerymobile-swipeupdown.js')}}"></script>
     <script src="{{ url_for('static', filename='mackenzie.js')}}"></script>
     <script type="text/javascript">
       $.mobile.autoInitializePage = false;
@@ -18,7 +19,7 @@
         $(".keycontainer").empty();
 	cursor = 0;
 	keyboard.forEach(function(key, index){
-          var keyDiv = $('<div>').append(key);
+          var keyDiv = $('<div>').append(key.toUpperCase());
 	  keyDiv.css({
 	    "height": "100%",
 	    "width": "30%",
@@ -28,7 +29,7 @@
 	  });
 	  keyDiv.click(function(event){
 	    $("#input").append(' ' + $.trim($(this).text()));
-	    socket.emit("request", {data: $.trim($("#input").text())});
+	    socket.emit("request", {data: $.trim($("#input").text().toLowerCase())});
 	    return false;
 	  });
 	  $('.keycontainer').append(keyDiv);
@@ -123,15 +124,34 @@
 	    });
 	});
       });
+      $(document).on('swipeup', '#inputspace', function () { 
+	var preInput = $.trim($("#input").text());
+        if (preInput == '') {
+	  var preSelected = $.trim($("#selected").text());
+	  var preSelectedList = preSelected.split(' ');
+	  preSelectedList.pop();
+	  var select = preSelectedList.join(' ');
+	  $("#selected").text($.trim(select));
+	  socket.emit("request", {data: ''});
+	} else {
+	  var preInputList = preInput.split(' ');
+	  preInputList.pop();
+	  var input = preInputList.join(' ');
+	  $("#input").text($.trim(input));
+	  socket.emit("request", {data: $.trim($("#input").text().toLowerCase())});
+	}
+      });
     </script>
     <meta charset="UTF-8">
     <title>multi cursor test</title>
   </head>
-  <body scroll="no" style="margin: 0; height: 100%; overflow: hidden;">
+  <body scroll="no" style="margin: 0; height: 100%; width:100%; overflow: hidden; position: fixed;">
     <div id="target" style="height: 60px; width:100%; font-size:1.5em"></div>
     <div id="selected" style="height: 60px; width:100%; font-size:1.5em"></div>
-    <div id="word" style="height: 30px; width: 100%; font-size: 1em;"></div>
-    <div class="keycontainer" style="height: 30px; margin:auto; width: 100%; user-select: none; font-size: 1.5em;"></div>
+    <div id="inputspace">
+      <div id="word" style="height: 30px; width: 100%; font-size: 1em;"></div>
+      <div class="keycontainer" style="height: 30px; margin:auto; width: 100%; user-select: none; font-size: 1.5em;"></div>
+    </div>
     <div id="input" style="margin-top: 20px; height: 50px; width: 100%;" ></div>
     <div id="wpm" style="margin-top: 20px; height: 50px; width: 100%;" ></div>
   </body>
