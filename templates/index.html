@@ -10,14 +10,13 @@
       $.mobile.autoInitializePage = false;
       var socket;
       var keyboard;
-      var cursor = 1;
-      var windowIndex = [0,2];
+      var cursor = 0;
+      var windowIndex = [[0,2], [3,5], [5,7]];
       var startTime;
 
       function setKeyboard() {
         $(".keycontainer").empty();
-	cursor = 1;
-	windowIndex = [0,2];
+	cursor = 0;
 	keyboard.forEach(function(key, index){
           var keyDiv = $('<div>').append(key);
 	  keyDiv.css({
@@ -35,7 +34,7 @@
 	  $('.keycontainer').append(keyDiv);
 	});
         $('.keycontainer').children().each(function(index) {
-	  if (windowIndex[0] <= index && index <= windowIndex[1]) {
+	  if (windowIndex[cursor][0] <= index && index <= windowIndex[cursor][1]) {
 	    $('.keycontainer').children().eq(index).show();
 	  } else {
 	    $('.keycontainer').children().eq(index).hide();
@@ -54,16 +53,17 @@
 	    "border-style": "solid",
 	    "text-align": "center"
 	  });
-	  wordDiv.click(function(event){
-	    $("#selected").append(' '+$.trim($(this).text()));
-            if ($("#selected").text() == $("#target").text().toLowerCase()) {
-              console.log("test");
-              setTarget();
-            }
-	    $("#input").empty();
-	    socket.emit("request", {data: ''});
-	    return false;
-	  });
+	  if (key != '') {
+	    wordDiv.click(function(event){
+	      $("#selected").append(' '+$.trim($(this).text()));
+              if ($.trim($("#selected").text()) == $.trim($("#target").text())) {
+                setTarget();
+              }
+	      $("#input").empty();
+	      socket.emit("request", {data: ''});
+	      return false;
+	    });
+	  }
 	  $("#word").append(wordDiv);
 	});
       }
@@ -77,10 +77,12 @@
         if (startTime == undefined) {
 	  startTime = performance.now();
 	} else {
-	  console.log(performance.now() - startTime);
+          var minute = ((performance.now() - startTime) / 1000) / 60;
+	  $("#wpm").text("WPM: " + (5 / minute));
 	  startTime = performance.now();
 	}
         $("#target").text(mackenzies[getRandomInt()]);
+	$("#selected").empty();
       }
 
       $(document).ready(function(){
@@ -95,36 +97,30 @@
         setTarget();
 
 	$('.keycontainer').on('swiperight', function(event){
-            if (cursor == 1) {
+            if (cursor == 0) {
 	      return;
 	    }
             cursor--;
-	    if (cursor == windowIndex[0] && windowIndex[0] != 0) {
-	      windowIndex = [windowIndex[0] - 1, windowIndex[1] - 1];
-	      $('.keycontainer').children().each(function(index) {
-	        if (windowIndex[0] <= index && index <= windowIndex[1]) {
-		  $('.keycontainer').children().eq(index).show();
-		} else {
-		  $('.keycontainer').children().eq(index).hide();
-		}
-	      });
-	    }
+	    $('.keycontainer').children().each(function(index) {
+	      if (windowIndex[cursor][0] <= index && index <= windowIndex[cursor][1]) {
+		$('.keycontainer').children().eq(index).show();
+	      } else {
+		$('.keycontainer').children().eq(index).hide();
+	      }
+	    });
         });
 	$('.keycontainer').on('swipeleft', function(event){
-	    if (cursor == 6) {
+	    if (cursor == 2) {
 	      return;
 	    }
 	    cursor++;
-	    if (cursor == windowIndex[1] && windowIndex[1] != keyboard.length - 1) {
-	      windowIndex = [windowIndex[0] + 1, windowIndex[1] + 1];
-	      $('.keycontainer').children().each(function(index) {
-	        if (windowIndex[0] <= index && index <= windowIndex[1]) {
-		  $('.keycontainer').children().eq(index).show();
-		} else {
-		  $('.keycontainer').children().eq(index).hide();
-		}
-	      });
-	    }
+	    $('.keycontainer').children().each(function(index) {
+	      if (windowIndex[cursor][0] <= index && index <= windowIndex[cursor][1]) {
+		$('.keycontainer').children().eq(index).show();
+	      } else {
+		$('.keycontainer').children().eq(index).hide();
+	      }
+	    });
 	});
       });
     </script>
@@ -137,5 +133,6 @@
     <div id="word" style="height: 30px; width: 100%; font-size: 1em;"></div>
     <div class="keycontainer" style="height: 30px; margin:auto; width: 100%; user-select: none; font-size: 1.5em;"></div>
     <div id="input" style="margin-top: 20px; height: 50px; width: 100%;" ></div>
+    <div id="wpm" style="margin-top: 20px; height: 50px; width: 100%;" ></div>
   </body>
 </html>

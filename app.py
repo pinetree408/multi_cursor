@@ -26,6 +26,9 @@ def index():
 def connect():
     input_data = []
     words, multiAlphaFreqs = getWordsAndMultiAlphaFreqsFromMultiAlphaPrefixHybrid(input_data)
+    if len(words) < 5:
+        for i in range(5 - len(words)):
+            words.append('')
     data = {
             'letter': ', '.join(multiAlphaFreqs),
             'word': ', '.join(words[:5])
@@ -44,6 +47,9 @@ def request(message):
         for item in message['data'].split(' '):
             input_data.append(str(item))
     words, multiAlphaFreqs = getWordsAndMultiAlphaFreqsFromMultiAlphaPrefixHybrid(input_data)
+    if len(words) < 5:
+        for i in range(5 - len(words)):
+            words.append('')
     data = {
             'letter': ', '.join(multiAlphaFreqs),
             'word': ', '.join(words[:5])
