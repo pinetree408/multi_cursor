@@ -250,3 +250,4 @@ word_0 = json.loads(open( 'hash/word_0.txt').read().decode('cp1252'))
 word_1 = json.loads(open( 'hash/word_1.txt').read().decode('cp1252'))
 word_2 = json.loads(open( 'hash/word_2.txt').read().decode('cp1252'))
 word_3 = json.loads(open( 'hash/word_3.txt').read().decode('cp1252'))
+print "done"

@@ -30,6 +30,9 @@
 	    "text-align": "center"
 	  });
 	  keyDiv.click(function(event){
+            if (startTime == undefined) {
+	      startTime = performance.now();
+	    }
 	    $("#input").append(' ' + $.trim($(this).text()));
 	    socket.emit("request", {data: $.trim($("#input").text().toLowerCase())});
 	    return false;
@@ -60,6 +63,9 @@
 	  });
 	  if (key != '') {
 	    wordDiv.click(function(event){
+              if (startTime == undefined) {
+	        startTime = performance.now();
+	      }
 	      $("#selected").find('span').remove();
 	      $("#selected").append(' '+$.trim($(this).text()));
               if ($.trim($("#selected").text()) == $.trim($("#target").text())) {
@@ -80,14 +86,10 @@
       }
 
       function setTarget() {
-        if (startTime == undefined) {
-	  startTime = performance.now();
-	} else {
-          var minute = ((performance.now() - startTime) / 1000) / 60;
-	  var numWord = $("#target").text().replace(/\s+/g, '').length / 5;
-	  $("#wpm").text("WPM: " + (numWord / minute));
-	  startTime = performance.now();
-	}
+        var minute = ((performance.now() - startTime) / 1000) / 60;
+	var numWord = $("#target").text().replace(/\s+/g, '').length / 5;
+	$("#wpm").text("WPM: " + (numWord / minute));
+	startTime = undefined;
         $("#target").text(mackenzies[getRandomInt()].toLowerCase());
 	$("#selected").empty();
       }
@@ -112,7 +114,7 @@
 	  }
         });
 
-        setTarget();
+        $("#target").text(mackenzies[getRandomInt()].toLowerCase());
 
 	$('.keycontainer').on('swiperight', function(event){
             if (cursor == 0) {
