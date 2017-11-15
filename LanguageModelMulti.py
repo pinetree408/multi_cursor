@@ -177,7 +177,6 @@ def getWordsAndMultiAlphaFreqsFromMultiAlphaPrefixHybrid(multiAlphaPrefix, words
     # this line take O(8^prefixLength)
     # the time may be reduced using another hashing file 
     prefixes = getPrefixesFromMultiAlphaPrefix(multiAlphaPrefix)
-    print('1:' + str(time.time()-ts))
 
     # produce words
     words = []
@@ -185,7 +184,6 @@ def getWordsAndMultiAlphaFreqsFromMultiAlphaPrefixHybrid(multiAlphaPrefix, words
         for word in word_filtered:
             if word.startswith(prefix):
                 words.append(word)
-    print('2:' + str(time.time()-ts))
 
     # produce multiAlphaFreqs
     multiAlphaFreqs = []
@@ -198,7 +196,6 @@ def getWordsAndMultiAlphaFreqsFromMultiAlphaPrefixHybrid(multiAlphaPrefix, words
         for multiAlpha in multiAlphas:
             for alpha in multiAlpha:
                 multiAlphaFreq.freq += alphaFreqs[ord(alpha) - ord('a')].freq
-    print('3:' + str(time.time()-ts))
 
     # sort and cut words
     def cmpWord(word1, word2):
@@ -206,13 +203,11 @@ def getWordsAndMultiAlphaFreqsFromMultiAlphaPrefixHybrid(multiAlphaPrefix, words
     words = sorted(words, cmp=cmpWord, reverse=True)
     if wordsLength > 0 and len(words) > wordsLength:
         words = words[0 : wordsLength]
-    print('4:' + str(time.time()-ts))
 
     # sort and make to list multiAlphaPrefix
     def cmpMultiAlphaFreqs(multiAlphaFreq1, multiAlphaFreq2):
         return cmp(multiAlphaFreq1.freq, multiAlphaFreq2.freq)
     multiAlphaFreqs = sorted(multiAlphaFreqs, cmp=cmpMultiAlphaFreqs, reverse=True)
-    print('5:' + str(time.time()-ts))
 
     return words, map(lambda multiAlphaFreq: multiAlphaFreq.multiAlpha, multiAlphaFreqs)
 
@@ -245,6 +240,8 @@ for line in ancFile.readlines():
 
     if len( ancDict) == 15000:
         break
+
+print "load key & word set from json file"
 key_0 = json.load( open( 'hash/key_0.txt'))
 key_1 = json.load( open( 'hash/key_1.txt'))
 key_2 = json.load( open( 'hash/key_2.txt'))
