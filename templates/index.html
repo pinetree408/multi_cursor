@@ -62,7 +62,7 @@
 	    wordDiv.click(function(event){
 	      $("#selected").find('span').remove();
 	      $("#selected").append(' '+$.trim($(this).text()));
-              if ($.trim($("#selected").text()) == $.trim($("#target").text().toLowerCase())) {
+              if ($.trim($("#selected").text()) == $.trim($("#target").text())) {
                 setTarget();
               }
 	      $("#input").empty();
@@ -88,7 +88,7 @@
 	  $("#wpm").text("WPM: " + (numWord / minute));
 	  startTime = performance.now();
 	}
-        $("#target").text(mackenzies[getRandomInt()]);
+        $("#target").text(mackenzies[getRandomInt()].toLowerCase());
 	$("#selected").empty();
       }
 
