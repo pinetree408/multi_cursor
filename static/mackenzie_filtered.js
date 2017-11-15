@@ -1,4 +1,4 @@
-var mackenzie = [
+var mackenzies = [
 "my watch fell in the water",
 "prevailing wind from the east",
 "never too rich and never too thin",
