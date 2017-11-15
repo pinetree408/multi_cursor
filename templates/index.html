@@ -102,6 +102,7 @@
 	  var wordList = msg.data.word.split(",");
 	  setSuggest(wordList);
 	  var nowInput = $.trim($("#input").text());
+	  $("#selected").find('span').remove();
 	  if (nowInput != '') {
 	    var nowInputList = nowInput.split(' ');
 	    var newNowInput = $.trim(wordList[0].slice(0, nowInputList.length));
@@ -109,7 +110,6 @@
 	    preDiv.css({
 	      "color": "gray"
 	    });
-	    $("#selected").find('span').remove();
 	    $("#selected").append(preDiv);
 	  }
         });

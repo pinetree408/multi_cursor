@@ -1,5 +1,6 @@
 import json
 import time
+import re
 
 ancFile = open('ANC-all-count.txt')
 ancDict = {}
@@ -37,7 +38,17 @@ def getWordsFromPrefixSorted(prefix, wordList):
     words = getWordsFromPrefix(prefix, wordList)
     def cmpWord(word1, word2):
         return cmp(ancDict[word1], ancDict[word2])
+    def cmpWordByPrefixLength(word1, word2):
+        if len(word1) == len(word2):
+            return 0
+        elif len(word1) == len(prefix):
+            return 1
+        elif len(word2) == len(prefix):
+            return -1
+        else:
+            return 0
     words = sorted(words, cmp=cmpWord, reverse=True)
+    words = sorted(words, cmp=cmpWordByPrefixLength, reverse=True)
     return words
 
 #return list of AlphaFreq object list.
@@ -132,7 +143,17 @@ def getWordsFromMultiAlphaPrefix(multiAlphaPrefix, wordsLength = 5):
 
     def cmpWord(word1, word2):
         return cmp(ancDict[word1], ancDict[word2])
+    def cmpWordByPrefixLength(word1, word2):
+        if len(word1) == len(word2):
+            return 0
+        elif len(word1) == len(prefix):
+            return 1
+        elif len(word2) == len(prefix):
+            return -1
+        else:
+            return 0
     words = sorted(words, cmp=cmpWord, reverse=True)
+    words = sorted(words, cmp=cmpWordByPrefixLength, reverse=True)
 
     if wordsLength > 0 and len(words) > wordsLength:
         words = words[0 : wordsLength]
@@ -172,18 +193,20 @@ def getWordsAndMultiAlphaFreqsFromMultiAlphaPrefixHybrid(multiAlphaPrefix, words
         return word_3[json.dumps(multiAlphaPrefix)], key_3[json.dumps(multiAlphaPrefix)]
 
     ts = time.time()
-    word_filtered = word_3[json.dumps(multiAlphaPrefix[:3])]
+    wordFiltered = word_3[json.dumps(multiAlphaPrefix[:3])]
 
     # this line take O(8^prefixLength)
     # the time may be reduced using another hashing file 
     prefixes = getPrefixesFromMultiAlphaPrefix(multiAlphaPrefix)
+    #print('1:' + str(time.time()-ts))
 
     # produce words
     words = []
     for prefix in prefixes:
-        for word in word_filtered:
+        for word in wordFiltered:
             if word.startswith(prefix):
                 words.append(word)
+    #print('2:' + str(time.time()-ts))
 
     # produce multiAlphaFreqs
     multiAlphaFreqs = []
@@ -192,10 +215,11 @@ def getWordsAndMultiAlphaFreqsFromMultiAlphaPrefixHybrid(multiAlphaPrefix, words
         multiAlphaFreqs.append(multiAlphaFreq)
 
     for prefix in prefixes:
-        alphaFreqs = getAlphaFreqsFromPrefix(prefix, word_filtered)
+        alphaFreqs = getAlphaFreqsFromPrefix(prefix, wordFiltered)
         for multiAlpha in multiAlphas:
             for alpha in multiAlpha:
                 multiAlphaFreq.freq += alphaFreqs[ord(alpha) - ord('a')].freq
+    #print('3:' + str(time.time()-ts))
 
     # sort and cut words
     def cmpWord(word1, word2):
@@ -203,11 +227,13 @@ def getWordsAndMultiAlphaFreqsFromMultiAlphaPrefixHybrid(multiAlphaPrefix, words
     words = sorted(words, cmp=cmpWord, reverse=True)
     if wordsLength > 0 and len(words) > wordsLength:
         words = words[0 : wordsLength]
+    #print('4:' + str(time.time()-ts))
 
     # sort and make to list multiAlphaPrefix
     def cmpMultiAlphaFreqs(multiAlphaFreq1, multiAlphaFreq2):
         return cmp(multiAlphaFreq1.freq, multiAlphaFreq2.freq)
     multiAlphaFreqs = sorted(multiAlphaFreqs, cmp=cmpMultiAlphaFreqs, reverse=True)
+    #print('5:' + str(time.time()-ts))
 
     return words, map(lambda multiAlphaFreq: multiAlphaFreq.multiAlpha, multiAlphaFreqs)
 
@@ -233,6 +259,10 @@ for line in ancFile.readlines():
     freq = int( lines[3])
 
     chk = 1
+
+    if not re.match(r"^[a-z]+$", word):
+        continue
+
     if word in ancDict.keys():
         ancDict[word] += freq
     else:
@@ -241,7 +271,39 @@ for line in ancFile.readlines():
     if len( ancDict) == 15000:
         break
 
-print "load key & word set from json file"
+mackenzieFile = file('static/mackenzie.js')
+filteredMackenzieFile = file('static/mackenzie_filtered.js', 'w')
+filteredMackenzie = []
+wordNotIn = []
+
+filteredMackenzieFile.write('var mackenzies = [\n')
+
+for line in mackenzieFile.readlines():
+    if '[' in line or ']' in line:
+        continue
+    lines = line.replace('"', '').replace(',', '').lower().split()
+    chk = 1
+    for word in lines:
+        if word not in ancDict.keys():
+            chk = 0
+            wordNotIn.append(word)
+            break
+    if chk == 1:
+        filteredMackenzie.append(line)
+        filteredMackenzieFile.write(line)
+
+filteredMackenzieFile.write('];')
+mackenzieFile.close()
+filteredMackenzieFile.close()
+
+'''
+print(ancDict.keys())
+print(filteredMackenzie)
+print(len(filteredMackenzie))
+print(wordNotIn)
+'''
+
+print "load json object"
 key_0 = json.load( open( 'hash/key_0.txt'))
 key_1 = json.load( open( 'hash/key_1.txt'))
 key_2 = json.load( open( 'hash/key_2.txt'))

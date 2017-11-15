@@ -1,7 +1,7 @@
 from LanguageModelMulti import *
 import json
 
-PREFIXS = [0]
+PREFIXS = [0, 1, 2, 3]
 
 for PREFIX in PREFIXS:
     print "start: " + str(PREFIX)
@@ -11,7 +11,7 @@ for PREFIX in PREFIXS:
         if PREFIX == 0:
             word_dict = getWordsFromMultiAlphaPrefix([], 0)
         else:
-            word_dict = LanguageModelMulti.getPrefixWordDictFromPrefixLength(PREFIX, 0)
+            word_dict = getPrefixWordDictFromPrefixLength(PREFIX, 0)
         word_json = json.dumps(word_dict, indent=2, ensure_ascii=False)
         fb.write(word_json)
 
@@ -21,5 +21,5 @@ for PREFIX in PREFIXS:
         if PREFIX == 0:
             key_json = getMultiAlphasFromMultiAlphaPrefix([], ancDict.keys())
         else:
-            key_json = LanguageModelMulti.getStaticMultiAlphaDictFromPrefixLength(PREFIX)
+            key_json = getMultiAlphaDictFromPrefixLength(PREFIX)
         json.dump(key_json, fb, indent=2)
