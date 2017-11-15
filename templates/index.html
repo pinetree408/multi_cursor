@@ -21,7 +21,8 @@
 	keyboard.forEach(function(key, index){
           var keyDiv = $('<div>').append(key.toUpperCase());
 	  keyDiv.css({
-	    "height": "100%",
+	    "height": "30px",
+	    "line-height": "30px",
 	    "width": "30%",
 	    "float": "left",
 	    "border-style": "solid",
@@ -48,11 +49,12 @@
 	wordList.forEach(function(key, index){
 	  var wordDiv = $('<div>').append(key);
 	  wordDiv.css({
-	    "height": "100%",
-	    "width": "18%",
+	    "height": "30px",
+	    "width": "17%",
 	    "float": "left",
 	    "border-style": "solid",
-	    "text-align": "center"
+	    "text-align": "center",
+	    "word-break": "break-all"
 	  });
 	  if (key != '') {
 	    wordDiv.click(function(event){
@@ -146,13 +148,14 @@
     <title>multi cursor test</title>
   </head>
   <body scroll="no" style="margin: 0; height: 100%; width:100%; overflow: hidden; position: fixed;">
-    <div id="target" style="height: 60px; width:100%; font-size:1.5em"></div>
-    <div id="selected" style="height: 60px; width:100%; font-size:1.5em"></div>
+    <div id="target" style="height: 60px; padding-left: 1px; width:100%; font-size:1.5em"></div>
+    <hr/>
+    <div id="selected" style="height: 60px; padding-left: 1px; width:100%; font-size:1em"></div>
     <div id="inputspace">
-      <div id="word" style="height: 30px; width: 100%; font-size: 1em;"></div>
-      <div class="keycontainer" style="height: 30px; margin:auto; width: 100%; user-select: none; font-size: 1.5em;"></div>
+      <div id="word" style="height: 36px; padding-left: 2.5%; width: 100%; font-size: 1em;"></div>
+      <div class="keycontainer" style="height: 36px; padding-left: 2%; margin-top: 10px; width: 100%; user-select: none; font-size: 1.5em;"></div>
     </div>
-    <div id="input" style="margin-top: 20px; height: 50px; width: 100%;" ></div>
-    <div id="wpm" style="margin-top: 20px; height: 50px; width: 100%;" ></div>
+    <div id="input" style="margin-top: 20px; height: 30px; width: 100%;" ></div>
+    <div id="wpm" style="margin-top: 10px; height: 30px; width: 100%;" ></div>
   </body>
 </html>
