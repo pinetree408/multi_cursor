@@ -54,7 +54,7 @@ def request(message):
             'letter': ', '.join(multiAlphaFreqs),
             'word': ', '.join(words[:5])
             }
-    emit("response", {'data': data}, broadcast=True)
+    emit("response", {'data': data})
 
 if __name__ == '__main__':
     app.jinja_env.auto_reload = True
