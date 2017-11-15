@@ -82,7 +82,8 @@
 	  startTime = performance.now();
 	} else {
           var minute = ((performance.now() - startTime) / 1000) / 60;
-	  $("#wpm").text("WPM: " + (5 / minute));
+	  var numWord = $("#target").text().replace(/\s+/g, '').length / 5;
+	  $("#wpm").text("WPM: " + (numWord / minute));
 	  startTime = performance.now();
 	}
         $("#target").text(mackenzies[getRandomInt()]);
@@ -160,9 +161,9 @@
     <title>multi cursor test</title>
   </head>
   <body scroll="no" style="margin: 0; height: 100%; width:100%; overflow: hidden; position: fixed;">
-    <div id="target" style="height: 60px; padding-left: 1px; width:100%; font-size:1.5em"></div>
+    <div id="target" style="height: 60px; padding-left: 1px; width:100%; font-size:1.5em; color: red;"></div>
     <hr/>
-    <div id="selected" style="height: 60px; padding-left: 1px; width:100%; font-size:1em">
+    <div id="selected" style="height: 60px; padding-left: 1px; width:100%; font-size:1.5em">
     </div>
     <div id="inputspace">
       <div id="word" style="height: 46px; padding-left: 2.5%; width: 100%; font-size: 1em;"></div>
