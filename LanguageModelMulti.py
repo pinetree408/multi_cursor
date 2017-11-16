@@ -271,8 +271,8 @@ for line in ancFile.readlines():
     if len( ancDict) == 15000:
         break
 
-mackenzieFile = file('static/mackenzie.js')
-filteredMackenzieFile = file('static/mackenzie_filtered.js', 'w')
+mackenzieFile = file('static/js/corpus/mackenzie.js')
+filteredMackenzieFile = file('static/js/corpus/mackenzie_filtered.js', 'w')
 filteredMackenzie = []
 wordNotIn = []
 

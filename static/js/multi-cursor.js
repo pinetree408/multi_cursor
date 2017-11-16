@@ -5,34 +5,45 @@ var cursor = 0;
 var windowIndex = [[0,2], [3,5], [5,7]];
 var startTime;
 
+var keyCss = {
+  "height": "30px",
+  "line-height": "30px",
+  "width": "30%",
+  "float": "left",
+  "border-style": "solid",
+  "border-width": "1px",
+  "text-align": "center"
+};
+
+var wordCss = {
+  "height": "40px",
+  "width": "19%",
+  "float": "left",
+  "border-style": "solid",
+  "border-width": "1px",
+  "text-align": "center",
+  "word-break": "break-all"
+};
+
 function setKeyVisible() {
-  $('.keycontainer').children().each(function(index) {
+  $('#keycontainer').children().each(function(index) {
     if (windowIndex[cursor][0] <= index && index <= windowIndex[cursor][1]) {
-      $('.keycontainer').children().eq(index).show();
+      $('#keycontainer').children().eq(index).show();
     } else {
-      $('.keycontainer').children().eq(index).hide();
+      $('#keycontainer').children().eq(index).hide();
     }
   });
 }
 
 function setKeyboard() {
-  $(".keycontainer").empty();
+  $("#keycontainer").empty();
   cursor = 0;
 
   keyboard.forEach(function(key, index){
     var keyView = $.trim(Array.from(key.toUpperCase()).join(' '))
     var keyDiv = $('<div>').append(keyView);
 
-    keyDiv.css({
-      "height": "30px",
-      "line-height": "30px",
-      "width": "30%",
-      "float": "left",
-      "border-style": "solid",
-      "border-width": "1px",
-      "text-align": "center"
-    });
-
+    keyDiv.css(keyCss);
     keyDiv.click(function(event){
       if (startTime == undefined) {
         startTime = performance.now();
@@ -42,25 +53,18 @@ function setKeyboard() {
       return false;
     });
 
-    $('.keycontainer').append(keyDiv);
+    $('#keycontainer').append(keyDiv);
   });
 
   setKeyVisible();
 }
 
 function setSuggest(wordList) {
-  $("#word").empty();
+  $("#wordcontainer").empty();
   wordList.forEach(function(key, index){
     var wordDiv = $('<div>').append(key);
-    wordDiv.css({
-      "height": "40px",
-      "width": "19%",
-      "float": "left",
-      "border-style": "solid",
-      "border-width": "1px",
-      "text-align": "center",
-      "word-break": "break-all"
-    });
+
+    wordDiv.css(wordCss);
     if (key != '') {
       wordDiv.click(function(event){
         if (startTime == undefined) {
@@ -76,7 +80,7 @@ function setSuggest(wordList) {
         return false;
       });
     }
-    $("#word").append(wordDiv);
+    $("#wordcontainer").append(wordDiv);
   });
 }
 
@@ -118,7 +122,7 @@ $(document).ready(function(){
 
   $("#target").text(mackenzies[getRandomInt()].toLowerCase());
 
-  $('.keycontainer').on('swiperight', function(event){
+  $('#keycontainer').on('swiperight', function(event){
     if (cursor == 0) {
       return;
     }
@@ -126,7 +130,7 @@ $(document).ready(function(){
     setKeyVisible();
   });
 
-  $('.keycontainer').on('swipeleft', function(event){
+  $('#keycontainer').on('swipeleft', function(event){
     if (cursor == 2) {
       return;
     }

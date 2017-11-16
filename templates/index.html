@@ -5,22 +5,22 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.6/socket.io.js"></script>
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
-    <script src="{{ url_for('static', filename='jquerymobile-swipeupdown.js')}}"></script>
-    <script src="{{ url_for('static', filename='mackenzie_filtered.js')}}"></script>
-    <script src="{{ url_for('static', filename='multi-cursor.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/plugin/jquerymobile-swipeupdown.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/corpus/mackenzie_filtered.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/multi-cursor.js')}}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
     <meta charset="UTF-8">
     <title>multi cursor test</title>
   </head>
-  <body scroll="no" style="margin: 0; height: 100%; width:100%; overflow: hidden; position: fixed;">
-    <div id="target" style="height: 60px; padding-left: 1px; width:100%; font-size:1.5em; color: red;"></div>
+  <body scroll="no">
+    <div id="target" class="sentence"></div>
     <hr/>
-    <div id="selected" style="height: 60px; padding-left: 1px; width:100%; font-size:1.5em">
+    <div id="selected" class="sentence"></div>
+    <div id="inputspace">
+      <div id="wordcontainer"></div>
+      <div id="keycontainer"></div>
     </div>
-    <div id="inputspace" style="background-color: gray;">
-      <div id="word" style="height: 46px; padding-left: 1%; width: 100%; font-size: 1em;"></div>
-      <div class="keycontainer" style="height: 36px; padding-left: 3%; margin-top: 10px; width: 100%; user-select: none; font-size: 1.5em;"></div>
-    </div>
-    <div id="input" style="margin-top: 20px; height: 30px; width: 100%;" ></div>
-    <div id="wpm" style="margin-top: 10px; height: 30px; width: 100%;" ></div>
+    <div id="input" class="information"></div>
+    <div id="wpm" class="information"></div>
   </body>
 </html>

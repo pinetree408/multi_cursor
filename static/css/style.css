@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+  position: fixed;
+}
+
+.sentence {
+  height: 60px;
+  padding-left: 1px;
+  width:100%;
+  font-size:1.5em;
+}
+
+.information {
+  margin-top: 20px;
+  height: 30px;
+  width: 100%; 
+}
+
+#target {
+  color: red;
+}
+
+#wordcontainer {
+  height: 46px;
+  padding-left: 1%;
+  width: 100%;
+  font-size: 1em;
+}
+
+#keycontainer {
+  height: 36px;
+  padding-left: 3%;
+  margin-top: 10px;
+  width: 100%;
+  user-select: none;
+  font-size: 1.5em;
+}
