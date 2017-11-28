@@ -67,6 +67,8 @@ def logging(message):
     filename = session['username']
     with open("logs/log_" + filename + ".csv","a+") as f:
         log = \
+            str(message['session']) + ',' + \
+            str(message['block']) + ',' + \
             str(message['target']) + ',' + \
             str(message['time']) + ',' + \
             str(message['input']) + ',' + \

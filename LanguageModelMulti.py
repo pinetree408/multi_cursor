@@ -152,9 +152,9 @@ def getWordsFromMultiAlphaPrefix(multiAlphaPrefix, wordsLength = 5):
             return -1
         else:
             return 0
+
     words = sorted(words, cmp=cmpWord, reverse=True)
     words = sorted(words, cmp=cmpWordByPrefixLength, reverse=True)
-
     if wordsLength > 0 and len(words) > wordsLength:
         words = words[0 : wordsLength]
 
@@ -224,7 +224,17 @@ def getWordsAndMultiAlphaFreqsFromMultiAlphaPrefixHybrid(multiAlphaPrefix, words
     # sort and cut words
     def cmpWord(word1, word2):
         return cmp(ancDict[word1], ancDict[word2])
+    def cmpWordByPrefixLength(word1, word2):
+        if len(word1) == len(word2):
+            return 0
+        elif len(word1) == len(prefix):
+            return 1
+        elif len(word2) == len(prefix):
+            return -1
+        else:
+            return 0
     words = sorted(words, cmp=cmpWord, reverse=True)
+    words = sorted(words, cmp=cmpWordByPrefixLength, reverse=True)
     if wordsLength > 0 and len(words) > wordsLength:
         words = words[0 : wordsLength]
     #print('4:' + str(time.time()-ts))
@@ -233,6 +243,7 @@ def getWordsAndMultiAlphaFreqsFromMultiAlphaPrefixHybrid(multiAlphaPrefix, words
     def cmpMultiAlphaFreqs(multiAlphaFreq1, multiAlphaFreq2):
         return cmp(multiAlphaFreq1.freq, multiAlphaFreq2.freq)
     multiAlphaFreqs = sorted(multiAlphaFreqs, cmp=cmpMultiAlphaFreqs, reverse=True)
+
     #print('5:' + str(time.time()-ts))
 
     return words, map(lambda multiAlphaFreq: multiAlphaFreq.multiAlpha, multiAlphaFreqs)

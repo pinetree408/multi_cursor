@@ -5,6 +5,8 @@ var cursor = 0;
 var windowIndex = [[0,2], [3,5], [5,7]];
 var startTime;
 
+var session = 1;
+var block = 1;
 
 function setKeyVisible() {
   $('#keycontainer').children().each(function(index) {
@@ -50,12 +52,14 @@ function setKeyboard() {
       $("#input").append(' ' + $.trim($(this).text().replace(/\s+/g, '')));
       socket.emit("request", {data: $.trim($("#input").text().toLowerCase())});
       socket.emit("logging", {
+        session: session,
+	block: block,
         target: $.trim($("#target").text()),
-	input: key,
+	input: $.trim(key),
         word: getSuggest(),	
         key: getKeyboard(),
 	visible: getVisibleKeyboard(),
-	time: performance.now().toFixed(0).toString(),
+	time: (performance.now() - startTime).toFixed(0).toString(),
 	type: 'select_key'
       });
       return false;
@@ -89,12 +93,14 @@ function setSuggest(wordList) {
         $("#selected").find('span').remove();
         $("#selected").append(' '+$.trim($(this).text()));
         socket.emit("logging", {
+          session: session,
+	  block: block,
           target: $.trim($("#target").text()),
-	  input: key,
+	  input: $.trim(key),
           word: getSuggest(),	
           key: getKeyboard(),
 	  visible: getVisibleKeyboard(),
-	  time: performance.now().toFixed(0).toString(),
+	  time: (performance.now() - startTime).toFixed(0).toString(),
 	  type: 'select_word'
         });
         if ($.trim($("#selected").text()) == $.trim($("#target").text())) {
@@ -121,6 +127,17 @@ function setTarget() {
   startTime = undefined;
   $("#target").text(mackenzies[getRandomInt()].toLowerCase());
   $("#selected").empty();
+  block = block + 1;
+  if (block == 3) {
+    block = 1;
+    session = session + 1;
+    $("#target").hide();
+  }
+
+  if (session == 7) {
+    session = 1;
+    alert("실험 종료");	  
+  }
 }
 
 $(document).ready(function(){
@@ -143,6 +160,9 @@ $(document).ready(function(){
   });
 
   $("#target").text(mackenzies[getRandomInt()].toLowerCase());
+  $("#container").click(function(event) {
+    $("#target").show();
+  });
 
   $('#keycontainer').on('swiperight', function(event){
     if (cursor == 0) {
@@ -151,12 +171,14 @@ $(document).ready(function(){
     cursor--;
     setKeyVisible();
     socket.emit("logging", {
+      session: session,
+      block: block,
       target: $.trim($("#target").text()),
       input: 'swipe_right',
       word: getSuggest(),	
       key: getKeyboard(),
       visible: getVisibleKeyboard(),
-      time: performance.now().toFixed(0).toString(),
+      time: (performance.now() - startTime).toFixed(0).toString(),
       type: 'gesture_prev'
     });
   });
@@ -171,12 +193,14 @@ $(document).ready(function(){
     cursor++;
     setKeyVisible();
     socket.emit("logging", {
+      session: session,
+      block: block,
       target: $.trim($("#target").text()),
-      input: 'swipe_right',
+      input: 'swipe_left',
       word: getSuggest(),	
       key: getKeyboard(),
       visible: getVisibleKeyboard(),
-      time: performance.now().toFixed(0).toString(),
+      time: (performance.now() - startTime).toFixed(0).toString(),
       type: 'gesture_next'
     });
   });
@@ -198,12 +222,14 @@ $(document).ready(function(){
       socket.emit("request", {data: $.trim($("#input").text().toLowerCase())});
     }
     socket.emit("logging", {
+      session: session,
+      block: block,
       target: $.trim($("#target").text()),
       input: 'swipe_up',
       word: getSuggest(),	
       key: getKeyboard(),
       visible: getVisibleKeyboard(),
-      time: performance.now().toFixed(0).toString(),
+      time: (performance.now() - startTime).toFixed(0).toString(),
       type: 'gesture_delete'
     });
   });
