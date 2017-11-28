@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import os
-from flask import Flask, render_template, session
+from flask import Flask, render_template, session, redirect, url_for
 from flask_socketio import SocketIO, emit
 
 import json
@@ -55,6 +55,16 @@ def request(message):
             'word': ', '.join(words[:5])
             }
     emit("response", {'data': data})
+
+@socketio.on("logging", namespace='/mynamespace')
+def logging(message):
+    print message
+
+@app.route('/create', methods=['GET', 'POST'])
+def create_user():
+    if request.method == 'POST':
+        return redirect(url_for('index'))
+    return render_template('create_user.html')
 
 if __name__ == '__main__':
     socketio.run(app, host='0.0.0.0')

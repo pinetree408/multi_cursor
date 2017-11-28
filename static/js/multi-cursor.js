@@ -16,6 +16,14 @@ function setKeyVisible() {
   });
 }
 
+function getKeyboard() {
+  var suggestedKey = '';
+  $("#keycontainer").children().each(function(index) {
+    suggestedKey = suggestedKey + ' ' + $("#keycontainer").children().eq(index).text().replace(/\s+/g, '');
+  });
+  return $.trim(suggestedKey);
+}
+
 function setKeyboard() {
   $("#keycontainer").empty();
   cursor = 0;
@@ -31,6 +39,15 @@ function setKeyboard() {
       }
       $("#input").append(' ' + $.trim($(this).text().replace(/\s+/g, '')));
       socket.emit("request", {data: $.trim($("#input").text().toLowerCase())});
+      socket.emit("logging", {
+        target: $.trim($("#target").text()),
+	input: key,
+        word: getSuggest(),	
+        key: getKeyboard(),
+	visible: windowIndex[cursor],
+	time: performance.now(),
+	type: 'select_key'
+      });
       return false;
     });
 
@@ -38,6 +55,14 @@ function setKeyboard() {
   });
 
   setKeyVisible();
+}
+
+function getSuggest() {
+  var suggestedWord = '';
+  $("#wordcontainer").children().each(function(index) {
+    suggestedWord = suggestedWord + ' ' + $("#wordcontainer").children().eq(index).text();
+  });
+  return $.trim(suggestedWord);
 }
 
 function setSuggest(wordList) {
@@ -58,6 +83,15 @@ function setSuggest(wordList) {
         }
         $("#input").empty();
         socket.emit("request", {data: ''});
+        socket.emit("logging", {
+          target: $.trim($("#target").text()),
+	  input: key,
+          word: getSuggest(),	
+          key: getKeyboard(),
+	  visible: windowIndex[cursor],
+	  time: performance.now(),
+	  type: 'select_word'
+        });
         return false;
       });
     }
@@ -106,6 +140,15 @@ $(document).ready(function(){
     }
     cursor--;
     setKeyVisible();
+    socket.emit("logging", {
+      target: $.trim($("#target").text()),
+      input: 'swipe_right',
+      word: getSuggest(),	
+      key: getKeyboard(),
+      visible: windowIndex[cursor],
+      time: performance.now(),
+      type: 'gesture_prev'
+    });
   });
 
   $('#keycontainer').on('swipeleft', function(event){
@@ -117,6 +160,15 @@ $(document).ready(function(){
     }
     cursor++;
     setKeyVisible();
+    socket.emit("logging", {
+      target: $.trim($("#target").text()),
+      input: 'swipe_right',
+      word: getSuggest(),	
+      key: getKeyboard(),
+      visible: windowIndex[cursor],
+      time: performance.now(),
+      type: 'gesture_next'
+    });
   });
 
   $('#inputspace').on('swipeup', function(event){
@@ -135,5 +187,14 @@ $(document).ready(function(){
       $("#input").text($.trim(input));
       socket.emit("request", {data: $.trim($("#input").text().toLowerCase())});
     }
+    socket.emit("logging", {
+      target: $.trim($("#target").text()),
+      input: 'swipe_up',
+      word: getSuggest(),	
+      key: getKeyboard(),
+      visible: windowIndex[cursor],
+      time: performance.now(),
+      type: 'gesture_delete'
+    });
   });
 });
