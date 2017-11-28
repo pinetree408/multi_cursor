@@ -240,7 +240,6 @@ def getWordsAndMultiAlphaFreqsFromMultiAlphaPrefixHybrid(multiAlphaPrefix, words
 '''
 def getMultiAlphaFreqsFromMultiAlphaPrefix(multiAlphaPrefix):
     multiAlphaFreqs = []
-
     prefixes = getPrefixesFromMultiAlphaPrefix(multiAlphaPrefix)
 
     for multiAlpha in multiAlphas:
@@ -270,7 +269,7 @@ for line in ancFile.readlines():
 
     if len( ancDict) == 15000:
         break
-
+'''
 mackenzieFile = file('static/js/corpus/mackenzie.js')
 filteredMackenzieFile = file('static/js/corpus/mackenzie_filtered.js', 'w')
 filteredMackenzie = []
@@ -296,7 +295,6 @@ filteredMackenzieFile.write('];')
 mackenzieFile.close()
 filteredMackenzieFile.close()
 
-'''
 print(ancDict.keys())
 print(filteredMackenzie)
 print(len(filteredMackenzie))

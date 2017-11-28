@@ -13,14 +13,22 @@
     <title>multi cursor test</title>
   </head>
   <body scroll="no">
-    <div id="target" class="sentence"></div>
-    <hr/>
-    <div id="selected" class="sentence"></div>
-    <div id="inputspace">
-      <div id="wordcontainer"></div>
-      <div id="keycontainer"></div>
+    <div id="multicursor">
+      <div id="container">
+        <div id="target" class="sentence"></div>
+        <div id="selected" class="sentence"></div>
+        <hr/>
+      </div>
+      <div id="keyboard">
+        <div class="information table">
+          <div id="input"></div>
+          <div id="wpm"></div>
+        </div>
+        <div id="inputspace">
+          <div id="wordcontainer" class="table"></div>
+          <div id="keycontainer" class="table"></div>
+        </div>
+      </div>
     </div>
-    <div id="input" class="information"></div>
-    <div id="wpm" class="information"></div>
   </body>
 </html>

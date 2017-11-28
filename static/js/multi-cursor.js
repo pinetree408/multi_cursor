@@ -5,25 +5,6 @@ var cursor = 0;
 var windowIndex = [[0,2], [3,5], [5,7]];
 var startTime;
 
-var keyCss = {
-  "height": "30px",
-  "line-height": "30px",
-  "width": "30%",
-  "float": "left",
-  "border-style": "solid",
-  "border-width": "1px",
-  "text-align": "center"
-};
-
-var wordCss = {
-  "height": "40px",
-  "width": "19%",
-  "float": "left",
-  "border-style": "solid",
-  "border-width": "1px",
-  "text-align": "center",
-  "word-break": "break-all"
-};
 
 function setKeyVisible() {
   $('#keycontainer').children().each(function(index) {
@@ -43,7 +24,7 @@ function setKeyboard() {
     var keyView = $.trim(Array.from(key.toUpperCase()).join(' '))
     var keyDiv = $('<div>').append(keyView);
 
-    keyDiv.css(keyCss);
+    keyDiv.addClass("key");
     keyDiv.click(function(event){
       if (startTime == undefined) {
         startTime = performance.now();
@@ -64,7 +45,7 @@ function setSuggest(wordList) {
   wordList.forEach(function(key, index){
     var wordDiv = $('<div>').append(key);
 
-    wordDiv.css(wordCss);
+    wordDiv.addClass("word");
     if (key != '') {
       wordDiv.click(function(event){
         if (startTime == undefined) {
@@ -92,7 +73,7 @@ function getRandomInt() {
 function setTarget() {
   var minute = ((performance.now() - startTime) / 1000) / 60;
   var numWord = $("#target").text().replace(/\s+/g, '').length / 5;
-  $("#wpm").text("WPM: " + (numWord / minute));
+  $("#wpm").text("WPM: " + (numWord / minute).toFixed(2));
   startTime = undefined;
   $("#target").text(mackenzies[getRandomInt()].toLowerCase());
   $("#selected").empty();
@@ -112,10 +93,7 @@ $(document).ready(function(){
     if (nowInput != '') {
       var nowInputList = nowInput.split(' ');
       var newNowInput = $.trim(wordList[0].slice(0, nowInputList.length));
-      var preDiv = $('<span>').append(' ' + newNowInput);
-      preDiv.css({
-        "color": "gray"
-      });
+      var preDiv = $('<span>').addClass("writing").append(' ' + newNowInput);
       $("#selected").append(preDiv);
     }
   });
