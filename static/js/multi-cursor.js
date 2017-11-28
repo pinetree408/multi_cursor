@@ -24,6 +24,16 @@ function getKeyboard() {
   return $.trim(suggestedKey);
 }
 
+function getVisibleKeyboard() {
+  var visibleKey = '';
+  $('#keycontainer').children().each(function(index) {
+    if (windowIndex[cursor][0] <= index && index <= windowIndex[cursor][1]) {
+      visibleKey = visibleKey + ' ' + $("#keycontainer").children().eq(index).text().replace(/\s+/g, '');
+    }
+  });
+  return $.trim(visibleKey);
+}
+
 function setKeyboard() {
   $("#keycontainer").empty();
   cursor = 0;
@@ -44,8 +54,8 @@ function setKeyboard() {
 	input: key,
         word: getSuggest(),	
         key: getKeyboard(),
-	visible: windowIndex[cursor],
-	time: performance.now(),
+	visible: getVisibleKeyboard(),
+	time: performance.now().toFixed(0).toString(),
 	type: 'select_key'
       });
       return false;
@@ -78,20 +88,20 @@ function setSuggest(wordList) {
         }
         $("#selected").find('span').remove();
         $("#selected").append(' '+$.trim($(this).text()));
-        if ($.trim($("#selected").text()) == $.trim($("#target").text())) {
-	  setTarget();
-        }
-        $("#input").empty();
-        socket.emit("request", {data: ''});
         socket.emit("logging", {
           target: $.trim($("#target").text()),
 	  input: key,
           word: getSuggest(),	
           key: getKeyboard(),
-	  visible: windowIndex[cursor],
-	  time: performance.now(),
+	  visible: getVisibleKeyboard(),
+	  time: performance.now().toFixed(0).toString(),
 	  type: 'select_word'
         });
+        if ($.trim($("#selected").text()) == $.trim($("#target").text())) {
+	  setTarget();
+        }
+        $("#input").empty();
+        socket.emit("request", {data: ''});
         return false;
       });
     }
@@ -145,8 +155,8 @@ $(document).ready(function(){
       input: 'swipe_right',
       word: getSuggest(),	
       key: getKeyboard(),
-      visible: windowIndex[cursor],
-      time: performance.now(),
+      visible: getVisibleKeyboard(),
+      time: performance.now().toFixed(0).toString(),
       type: 'gesture_prev'
     });
   });
@@ -165,8 +175,8 @@ $(document).ready(function(){
       input: 'swipe_right',
       word: getSuggest(),	
       key: getKeyboard(),
-      visible: windowIndex[cursor],
-      time: performance.now(),
+      visible: getVisibleKeyboard(),
+      time: performance.now().toFixed(0).toString(),
       type: 'gesture_next'
     });
   });
@@ -192,8 +202,8 @@ $(document).ready(function(){
       input: 'swipe_up',
       word: getSuggest(),	
       key: getKeyboard(),
-      visible: windowIndex[cursor],
-      time: performance.now(),
+      visible: getVisibleKeyboard(),
+      time: performance.now().toFixed(0).toString(),
       type: 'gesture_delete'
     });
   });

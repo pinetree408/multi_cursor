@@ -3,6 +3,7 @@
 import os
 from flask import Flask, render_template, session, redirect, url_for
 from flask_socketio import SocketIO, emit
+from base64 import b64encode
 
 import json
 from LanguageModelMulti import *
@@ -11,12 +12,17 @@ app = Flask(__name__)
 app.secret_key = "secret"
 socketio = SocketIO(app)
 
+user_no = 1
+
 @app.before_request
 def before_request():
-    if 'session' in session:
+    global user_no
+    if 'session' in session and 'user-id' in session:
         pass
     else:
         session['session'] = os.urandom(24)
+        session['username'] = 'user'+str(user_no)
+        user_no += 1
 
 @app.route('/')
 def index():
@@ -58,7 +64,17 @@ def request(message):
 
 @socketio.on("logging", namespace='/mynamespace')
 def logging(message):
-    print message
+    filename = session['username']
+    with open("logs/log_" + filename + ".csv","a+") as f:
+        log = \
+            str(message['target']) + ',' + \
+            str(message['time']) + ',' + \
+            str(message['input']) + ',' + \
+            str(message['word']) + ',' + \
+            str(message['key']) + ',' + \
+            str(message['visible']) + ',' + \
+            str(message['type']) + '\n'
+        f.write(log)
 
 @app.route('/create', methods=['GET', 'POST'])
 def create_user():
