@@ -7,3 +7,6 @@ venv/
 # for python
 *.py[cod]
 *.whl
+
+# for this project
+logs/
