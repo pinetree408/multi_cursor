@@ -99,8 +99,9 @@ function wordListReconstructor(wordList) {
 function setSuggest(wordList) {
   $("#wordcontainer").empty();
 
-  wordList = wordListReconstructor(wordList);
+  $("#testing").text(wordList);
 
+  wordList = wordListReconstructor(wordList);
   wordList.forEach(function(key, index){
     var wordDiv = $('<div>').append($.trim(key));
 
