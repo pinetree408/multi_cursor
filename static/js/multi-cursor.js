@@ -1,6 +1,5 @@
 $.mobile.autoInitializePage = false;
 var socket;
-var keyboard;
 var cursor = 0;
 var windowIndex = [[0,2], [3,5], [5,7]];
 var startTime;
@@ -36,7 +35,7 @@ function getVisibleKeyboard() {
   return $.trim(visibleKey);
 }
 
-function setKeyboard() {
+function setKeyboard(keyboard) {
   $("#keycontainer").empty();
   cursor = 0;
 
@@ -79,38 +78,57 @@ function getSuggest() {
   return $.trim(suggestedWord);
 }
 
+function wordListReconstructor(wordList) {
+  var sumLen = 0;
+  var maxLen = 0;
+  wordList.forEach(function(key, index){
+    sumLen = sumLen + $.trim(key).length;
+    if ($.trim(key).length > maxLen) {
+      maxLen = $.trim(key).length;
+    }
+  });
+  var avgLen = sumLen / wordList.length;
+  var visibleRange = parseInt(22 / maxLen);
+  if (wordList.length > visibleRange) {
+    return wordList.slice(0, visibleRange);
+  } else {
+    return wordList;
+  }
+}
+
 function setSuggest(wordList) {
   $("#wordcontainer").empty();
+
+  wordList = wordListReconstructor(wordList);
+
   wordList.forEach(function(key, index){
-    var wordDiv = $('<div>').append(key);
+    var wordDiv = $('<div>').append($.trim(key));
 
     wordDiv.addClass("word");
-    if (key != '') {
-      wordDiv.click(function(event){
-        if (startTime == undefined) {
-	  startTime = performance.now();
-        }
-        $("#selected").find('span').remove();
-        $("#selected").append(' '+$.trim($(this).text()));
-        socket.emit("logging", {
-          session: session,
-	  block: block,
-          target: $.trim($("#target").text()),
-	  input: $.trim(key),
-          word: getSuggest(),	
-          key: getKeyboard(),
-	  visible: getVisibleKeyboard(),
-	  time: (performance.now() - startTime).toFixed(0).toString(),
-	  type: 'select_word'
-        });
-        if ($.trim($("#selected").text()) == $.trim($("#target").text())) {
-	  setTarget();
-        }
-        $("#input").empty();
-        socket.emit("request", {data: ''});
-        return false;
+    wordDiv.click(function(event){
+      if (startTime == undefined) {
+	startTime = performance.now();
+      }
+      $("#selected").find('span').remove();
+      $("#selected").append(' '+$.trim($(this).text()));
+      socket.emit("logging", {
+        session: session,
+	block: block,
+        target: $.trim($("#target").text()),
+	input: $.trim(key),
+        word: getSuggest(),	
+        key: getKeyboard(),
+	visible: getVisibleKeyboard(),
+	time: (performance.now() - startTime).toFixed(0).toString(),
+	type: 'select_word'
       });
-    }
+      if ($.trim($("#selected").text()) == $.trim($("#target").text())) {
+	setTarget();
+      }
+      $("#input").empty();
+      socket.emit("request", {data: ''});
+      return false;
+    });
     $("#wordcontainer").append(wordDiv);
   });
 }
@@ -143,8 +161,8 @@ function setTarget() {
 $(document).ready(function(){
   socket = io.connect("http://" + document.domain + ":" + location.port + "/mynamespace");
   socket.on('response', function(msg){
-    keyboard = msg.data.letter.split(",");
-    setKeyboard();
+    var keyboard = msg.data.letter.split(",");
+    setKeyboard(keyboard);
 
     var wordList = msg.data.word.split(",");
     setSuggest(wordList);

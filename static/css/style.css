@@ -5,7 +5,7 @@ html, body {
   padding: 0px;
   overflow: hidden;
   position: fixed;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', monospace;
   color: #222;
 }
 
@@ -110,11 +110,11 @@ hr {
 
 #wordcontainer {
   color: #ccc;
-  font-size: 1em;
+  font-size: 1.7em;
   margin-bottom: 15px;
 }
 
 #keycontainer {
   user-select: none;
-  font-size: 2em;
+  font-size: 1.8em;
 }
