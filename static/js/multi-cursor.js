@@ -79,27 +79,24 @@ function getSuggest() {
 }
 
 function wordListReconstructor(wordList) {
-  var sumLen = 0;
-  var maxLen = 0;
-  wordList.forEach(function(key, index){
-    sumLen = sumLen + $.trim(key).length;
-    if ($.trim(key).length > maxLen) {
-      maxLen = $.trim(key).length;
+  for (var i = 1; i < wordList.length + 1; i++) {
+    var subSet = wordList.slice(0, i);
+    var maxLen = 0;
+    subSet.forEach(function(key, index) {
+      if ($.trim(key).length > maxLen) {
+        maxLen = $.trim(key).length;
+      }
+    });
+    var letterLen = maxLen * i;
+    if (letterLen > 26 && i > 1) {
+      return wordList.slice(0, i-1);
     }
-  });
-  var avgLen = sumLen / wordList.length;
-  var visibleRange = parseInt(22 / maxLen);
-  if (wordList.length > visibleRange) {
-    return wordList.slice(0, visibleRange);
-  } else {
-    return wordList;
   }
+  return wordList;
 }
 
 function setSuggest(wordList) {
   $("#wordcontainer").empty();
-
-  $("#testing").text(wordList);
 
   wordList = wordListReconstructor(wordList);
   wordList.forEach(function(key, index){
